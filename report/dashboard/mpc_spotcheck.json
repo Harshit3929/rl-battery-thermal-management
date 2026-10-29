@@ -1,0 +1,4920 @@
+{
+  "kind": "fresh simulation",
+  "completed_at": "2026-10-27T09:59:31.915663+00:00",
+  "controller": "mpc",
+  "training_seed": null,
+  "episode": {
+    "id": "evaluation_hwfet",
+    "scenario": "mild",
+    "seed": 704,
+    "episode": {
+      "cycle": "hwfet",
+      "ambient_c": 30.0,
+      "temperature_c": 32.0,
+      "duration_s": 765
+    }
+  },
+  "specification": {
+    "cycle": "hwfet",
+    "ambient_c": 30.0,
+    "temperature_c": 32.0,
+    "soc": 0.8,
+    "grade": 0.0,
+    "duration_s": 765
+  },
+  "shield": true,
+  "checkpoint": null,
+  "cycle_provenance": {
+    "source_url": "https://www.epa.gov/sites/default/files/2015-10/hwycol.txt",
+    "source_units": "mph",
+    "source_sha256": "e48e278a40312dfe84d31b5f448b601e7046c72487a6a20d3db1d4f85fb3e10a",
+    "provenance": "real",
+    "csv_sha256": "d1562d8b06011d2d6592f0c1300a0c46c9b63e6ca92ee1a11d5e1761887f6fb2"
+  },
+  "metrics": {
+    "cost": 238.97850103343006,
+    "aux_wh": 0.0,
+    "aging_exposure_s": 1194.8925051671495,
+    "violation_seconds": 0,
+    "shield_seconds": 0,
+    "max_temperature_c": 32.234791531783294,
+    "spatial_delta_c": 0.0,
+    "duration_s": 765,
+    "violation_percent": 0.0,
+    "shield_firing_percent": 0.0,
+    "final_soc": 0.7662295706422426,
+    "termination_reason": ""
+  },
+  "trace": [
+    {
+      "time_s": 0,
+      "temperatures_c": [
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "soc": 0.800000011920929,
+      "coolant_c": 32.0,
+      "raw_action": null,
+      "applied_action": null,
+      "cost": 0.0,
+      "aux_wh": 0.0,
+      "violation_seconds": 0,
+      "shield_seconds": 0
+    },
+    {
+      "time_s": 5,
+      "temperatures_c": [
+        31.99953842163086,
+        31.99953842163086,
+        31.99953842163086,
+        31.99953842163086
+      ],
+      "soc": 0.7999257445335388,
+      "coolant_c": 32.0,
+      "demand_kw": 13.992877960205078,
+      "current_a": 24.824400701354804,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 1.3905489729843596,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 6.952744864921798,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 10,
+      "temperatures_c": [
+        32.00192642211914,
+        32.00192642211914,
+        32.00192642211914,
+        32.00192642211914
+      ],
+      "soc": 0.7995306849479675,
+      "coolant_c": 32.0,
+      "demand_kw": 23.315113067626953,
+      "current_a": 54.806805235643864,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 3.0860706488825107,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 15.430353244412554,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.001927477374636,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 15,
+      "temperatures_c": [
+        32.004390716552734,
+        32.004390716552734,
+        32.004390716552734,
+        32.004390716552734
+      ],
+      "soc": 0.7991415858268738,
+      "coolant_c": 32.0,
+      "demand_kw": 16.08346939086914,
+      "current_a": 40.262296148820454,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 4.776078418100025,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 23.880392090500127,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0043918130369,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 20,
+      "temperatures_c": [
+        32.00572204589844,
+        32.00572204589844,
+        32.00572204589844,
+        32.00572204589844
+      ],
+      "soc": 0.7988391518592834,
+      "coolant_c": 32.0,
+      "demand_kw": 13.006619453430176,
+      "current_a": 36.39961170041559,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 6.383861788402893,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 31.919308942014467,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.00572202374594,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 25,
+      "temperatures_c": [
+        32.00650405883789,
+        32.00650405883789,
+        32.00650405883789,
+        32.00650405883789
+      ],
+      "soc": 0.7986004948616028,
+      "coolant_c": 32.0,
+      "demand_kw": 14.031307220458984,
+      "current_a": 21.377676122100524,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 7.930998231167485,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 39.65499115583743,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.00650406123297,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 30,
+      "temperatures_c": [
+        32.006683349609375,
+        32.006683349609375,
+        32.006683349609375,
+        32.006683349609375
+      ],
+      "soc": 0.7984887957572937,
+      "coolant_c": 32.0,
+      "demand_kw": 0.19210107624530792,
+      "current_a": 0.5392279228488458,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 9.362409549198262,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 46.81204774599131,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.00684505474095,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 35,
+      "temperatures_c": [
+        32.00700378417969,
+        32.00700378417969,
+        32.00700378417969,
+        32.00700378417969
+      ],
+      "soc": 0.7983245849609375,
+      "coolant_c": 32.0,
+      "demand_kw": 11.399943351745605,
+      "current_a": 36.458300383899946,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 10.838827304712975,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 54.19413652356488,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.00700545434669,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 40,
+      "temperatures_c": [
+        32.00742721557617,
+        32.00742721557617,
+        32.00742721557617,
+        32.00742721557617
+      ],
+      "soc": 0.7981284856796265,
+      "coolant_c": 32.0,
+      "demand_kw": 7.393004417419434,
+      "current_a": 22.874588568456538,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 12.345619567933694,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 61.72809783966847,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.007428425423484,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 45,
+      "temperatures_c": [
+        32.0074348449707,
+        32.0074348449707,
+        32.0074348449707,
+        32.0074348449707
+      ],
+      "soc": 0.7979968190193176,
+      "coolant_c": 32.0,
+      "demand_kw": 5.9285664558410645,
+      "current_a": 15.356073518264122,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 13.791175164562013,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 68.95587582281007,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.00745842981744,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 50,
+      "temperatures_c": [
+        32.00830078125,
+        32.00830078125,
+        32.00830078125,
+        32.00830078125
+      ],
+      "soc": 0.7977662682533264,
+      "coolant_c": 32.0,
+      "demand_kw": 17.327531814575195,
+      "current_a": 48.03536032134637,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 15.330756007940867,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 76.65378003970433,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.00830216224787,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 55,
+      "temperatures_c": [
+        32.01104736328125,
+        32.01104736328125,
+        32.01104736328125,
+        32.01104736328125
+      ],
+      "soc": 0.7973737120628357,
+      "coolant_c": 32.0,
+      "demand_kw": 19.35317039489746,
+      "current_a": 53.696627204750804,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 17.0244665339061,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 85.1223326695305,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.01104705233192,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 60,
+      "temperatures_c": [
+        32.013221740722656,
+        32.013221740722656,
+        32.013221740722656,
+        32.013221740722656
+      ],
+      "soc": 0.797038733959198,
+      "coolant_c": 32.0,
+      "demand_kw": 13.455462455749512,
+      "current_a": 30.073932965825286,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 18.663583892125935,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 93.31791946062967,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.01322201202733,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 65,
+      "temperatures_c": [
+        32.014381408691406,
+        32.014381408691406,
+        32.014381408691406,
+        32.014381408691406
+      ],
+      "soc": 0.7967959642410278,
+      "coolant_c": 32.0,
+      "demand_kw": 13.857357025146484,
+      "current_a": 35.70129792626825,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 20.215170608255214,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 101.07585304127608,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.014383005666,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 70,
+      "temperatures_c": [
+        32.01606750488281,
+        32.01606750488281,
+        32.01606750488281,
+        32.01606750488281
+      ],
+      "soc": 0.7965037226676941,
+      "coolant_c": 32.0,
+      "demand_kw": 10.708127975463867,
+      "current_a": 37.37876797656542,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 21.813851280411473,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 109.06925640205738,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.016067170702016,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 75,
+      "temperatures_c": [
+        32.017147064208984,
+        32.017147064208984,
+        32.017147064208984,
+        32.017147064208984
+      ],
+      "soc": 0.796274721622467,
+      "coolant_c": 32.0,
+      "demand_kw": 7.086147308349609,
+      "current_a": 28.237280669900358,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 23.35251572307603,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 116.76257861538016,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0171456516459,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 80,
+      "temperatures_c": [
+        32.01765441894531,
+        32.01765441894531,
+        32.01765441894531,
+        32.01765441894531
+      ],
+      "soc": 0.7961177229881287,
+      "coolant_c": 32.0,
+      "demand_kw": 8.852872848510742,
+      "current_a": 22.99007268618799,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 24.822689168789708,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 124.11344584394854,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.017654002943694,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 85,
+      "temperatures_c": [
+        32.01852035522461,
+        32.01852035522461,
+        32.01852035522461,
+        32.01852035522461
+      ],
+      "soc": 0.7959048748016357,
+      "coolant_c": 32.0,
+      "demand_kw": 7.055203914642334,
+      "current_a": 28.132810807601423,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 26.346031399198157,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 131.7301569959908,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.01851938322377,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 90,
+      "temperatures_c": [
+        32.018768310546875,
+        32.018768310546875,
+        32.018768310546875,
+        32.018768310546875
+      ],
+      "soc": 0.7957888841629028,
+      "coolant_c": 32.0,
+      "demand_kw": 6.7816691398620605,
+      "current_a": 12.889705221231909,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 27.777296428082742,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 138.88648214041373,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.01876883883753,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 95,
+      "temperatures_c": [
+        32.019935607910156,
+        32.019935607910156,
+        32.019935607910156,
+        32.019935607910156
+      ],
+      "soc": 0.7955401539802551,
+      "coolant_c": 32.0,
+      "demand_kw": 14.640279769897461,
+      "current_a": 32.88670006438176,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 29.334886701178565,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 146.67443350589284,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.01993392382098,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 100,
+      "temperatures_c": [
+        32.02173614501953,
+        32.02173614501953,
+        32.02173614501953,
+        32.02173614501953
+      ],
+      "soc": 0.7952311635017395,
+      "coolant_c": 32.0,
+      "demand_kw": 15.309076309204102,
+      "current_a": 39.49063985004778,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 30.94982775239337,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 154.74913876196686,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.02173791774891,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 105,
+      "temperatures_c": [
+        32.023101806640625,
+        32.023101806640625,
+        32.023101806640625,
+        32.023101806640625
+      ],
+      "soc": 0.7949772477149963,
+      "coolant_c": 32.0,
+      "demand_kw": 7.662338733673096,
+      "current_a": 25.055499688914125,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 32.51252899997717,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 162.56264499988586,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0231001348743,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 110,
+      "temperatures_c": [
+        32.02408981323242,
+        32.02408981323242,
+        32.02408981323242,
+        32.02408981323242
+      ],
+      "soc": 0.794755756855011,
+      "coolant_c": 32.0,
+      "demand_kw": 11.70689868927002,
+      "current_a": 30.34189470471781,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 34.04443305351599,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 170.22216526757992,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.02409000361147,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 115,
+      "temperatures_c": [
+        32.0250358581543,
+        32.0250358581543,
+        32.0250358581543,
+        32.0250358581543
+      ],
+      "soc": 0.7945398092269897,
+      "coolant_c": 32.0,
+      "demand_kw": 3.7916979789733887,
+      "current_a": 20.244515534824785,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 35.57110593752144,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 177.85552968760717,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.02503626003503,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 120,
+      "temperatures_c": [
+        32.025177001953125,
+        32.025177001953125,
+        32.025177001953125,
+        32.025177001953125
+      ],
+      "soc": 0.7944455742835999,
+      "coolant_c": 32.0,
+      "demand_kw": 1.5464575290679932,
+      "current_a": 9.187454487026542,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 36.98201531285177,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 184.91007656425884,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.02517517632662,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 125,
+      "temperatures_c": [
+        32.02581024169922,
+        32.02581024169922,
+        32.02581024169922,
+        32.02581024169922
+      ],
+      "soc": 0.794277012348175,
+      "coolant_c": 32.0,
+      "demand_kw": 11.099176406860352,
+      "current_a": 38.60872879019689,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 38.46369272348928,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 192.31846361744638,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.02580835685753,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 130,
+      "temperatures_c": [
+        32.02649688720703,
+        32.02649688720703,
+        32.02649688720703,
+        32.02649688720703
+      ],
+      "soc": 0.7940734028816223,
+      "coolant_c": 32.0,
+      "demand_kw": 11.138895034790039,
+      "current_a": 23.911596877503953,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 39.978725034661466,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 199.8936251733073,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.026495402180586,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 135,
+      "temperatures_c": [
+        32.02696990966797,
+        32.02696990966797,
+        32.02696990966797,
+        32.02696990966797
+      ],
+      "soc": 0.793921172618866,
+      "coolant_c": 32.0,
+      "demand_kw": -8.76089859008789,
+      "current_a": -2.755415461536033,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 41.453515991338705,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 207.2675799566935,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0269962689193,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 140,
+      "temperatures_c": [
+        32.028324127197266,
+        32.028324127197266,
+        32.028324127197266,
+        32.028324127197266
+      ],
+      "soc": 0.7941646575927734,
+      "coolant_c": 32.0,
+      "demand_kw": 3.344414710998535,
+      "current_a": 4.705756806691726,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 43.02124852553976,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 215.10624262769878,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.028409856725,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 145,
+      "temperatures_c": [
+        32.02880859375,
+        32.02880859375,
+        32.02880859375,
+        32.02880859375
+      ],
+      "soc": 0.7939659357070923,
+      "coolant_c": 32.0,
+      "demand_kw": 21.454004287719727,
+      "current_a": 42.17688401107173,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 44.531766653263745,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 222.65883326631868,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.028806917462745,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 150,
+      "temperatures_c": [
+        32.032413482666016,
+        32.032413482666016,
+        32.032413482666016,
+        32.032413482666016
+      ],
+      "soc": 0.793520987033844,
+      "coolant_c": 32.0,
+      "demand_kw": 11.491084098815918,
+      "current_a": 38.74472811743955,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 46.276732289642986,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 231.3836614482149,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03241226797565,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 155,
+      "temperatures_c": [
+        32.03324508666992,
+        32.03324508666992,
+        32.03324508666992,
+        32.03324508666992
+      ],
+      "soc": 0.7932894825935364,
+      "coolant_c": 32.0,
+      "demand_kw": 13.633023262023926,
+      "current_a": 30.508519664982195,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 47.81870160891037,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 239.09350804455178,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0332449518781,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 160,
+      "temperatures_c": [
+        32.035221099853516,
+        32.035221099853516,
+        32.035221099853516,
+        32.035221099853516
+      ],
+      "soc": 0.7929608225822449,
+      "coolant_c": 32.0,
+      "demand_kw": 10.708127975463867,
+      "current_a": 47.0407010191116,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 49.45324260169879,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 247.26621300849388,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03522111819615,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 165,
+      "temperatures_c": [
+        32.0367431640625,
+        32.0367431640625,
+        32.0367431640625,
+        32.0367431640625
+      ],
+      "soc": 0.7926817536354065,
+      "coolant_c": 32.0,
+      "demand_kw": 11.138895034790039,
+      "current_a": 38.761056476728534,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 51.04069722334078,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 255.20348611670383,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03674506096706,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 170,
+      "temperatures_c": [
+        32.037269592285156,
+        32.037269592285156,
+        32.037269592285156,
+        32.037269592285156
+      ],
+      "soc": 0.7925330400466919,
+      "coolant_c": 32.0,
+      "demand_kw": -1.103968858718872,
+      "current_a": 0.1123059647890191,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 52.5040880361976,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 262.5204401809879,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03728090259748,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 175,
+      "temperatures_c": [
+        32.03721237182617,
+        32.03721237182617,
+        32.03721237182617,
+        32.03721237182617
+      ],
+      "soc": 0.7924844622612,
+      "coolant_c": 32.0,
+      "demand_kw": 6.545921325683594,
+      "current_a": 12.364135819997834,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 53.88155782621835,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 269.40778913109165,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03728090259748,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 180,
+      "temperatures_c": [
+        32.037208557128906,
+        32.037208557128906,
+        32.037208557128906,
+        32.037208557128906
+      ],
+      "soc": 0.7924581170082092,
+      "coolant_c": 32.0,
+      "demand_kw": -4.3096923828125,
+      "current_a": -11.206825273331711,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 55.30680049124599,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 276.5340024562298,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03728090259748,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 185,
+      "temperatures_c": [
+        32.03825378417969,
+        32.03825378417969,
+        32.03825378417969,
+        32.03825378417969
+      ],
+      "soc": 0.7922927141189575,
+      "coolant_c": 32.0,
+      "demand_kw": 18.005739212036133,
+      "current_a": 54.86988699167342,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 56.8394046196394,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 284.1970230981969,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.038252708767196,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 190,
+      "temperatures_c": [
+        32.03893280029297,
+        32.03893280029297,
+        32.03893280029297,
+        32.03893280029297
+      ],
+      "soc": 0.792121171951294,
+      "coolant_c": 32.0,
+      "demand_kw": 9.320525169372559,
+      "current_a": 6.363925298508465,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 58.32466806835834,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 291.6233403417916,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.03907437618432,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 195,
+      "temperatures_c": [
+        32.040252685546875,
+        32.040252685546875,
+        32.040252685546875,
+        32.040252685546875
+      ],
+      "soc": 0.791836142539978,
+      "coolant_c": 32.0,
+      "demand_kw": 13.499693870544434,
+      "current_a": 34.79414649281062,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 59.91802575199272,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 299.59012875996353,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04025224174776,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 200,
+      "temperatures_c": [
+        32.0403938293457,
+        32.0403938293457,
+        32.0403938293457,
+        32.0403938293457
+      ],
+      "soc": 0.7917496562004089,
+      "coolant_c": 32.0,
+      "demand_kw": 4.215219497680664,
+      "current_a": -0.6687974550957173,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 61.32627713153013,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 306.6313856576505,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04054863810329,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 205,
+      "temperatures_c": [
+        32.04042434692383,
+        32.04042434692383,
+        32.04042434692383,
+        32.04042434692383
+      ],
+      "soc": 0.7916172742843628,
+      "coolant_c": 32.0,
+      "demand_kw": 9.320525169372559,
+      "current_a": 19.691497102777745,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 62.7743968747667,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 313.8719843738334,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04054863810329,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 210,
+      "temperatures_c": [
+        32.04119110107422,
+        32.04119110107422,
+        32.04119110107422,
+        32.04119110107422
+      ],
+      "soc": 0.791412889957428,
+      "coolant_c": 32.0,
+      "demand_kw": -4.322873592376709,
+      "current_a": -0.6518744012756339,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 64.29302737862801,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 321.46513689313997,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.041248215367226,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 215,
+      "temperatures_c": [
+        32.041011810302734,
+        32.041011810302734,
+        32.041011810302734,
+        32.041011810302734
+      ],
+      "soc": 0.7914528250694275,
+      "coolant_c": 32.0,
+      "demand_kw": 11.570012092590332,
+      "current_a": 17.420295217626908,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 65.70729483679744,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 328.53647418398714,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.041248215367226,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 220,
+      "temperatures_c": [
+        32.043434143066406,
+        32.043434143066406,
+        32.043434143066406,
+        32.043434143066406
+      ],
+      "soc": 0.7910811901092529,
+      "coolant_c": 32.0,
+      "demand_kw": 9.355113983154297,
+      "current_a": 37.53317369424374,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 67.38323509887101,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 336.91617549435495,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.0434353649324,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 225,
+      "temperatures_c": [
+        32.04480743408203,
+        32.04480743408203,
+        32.04480743408203,
+        32.04480743408203
+      ],
+      "soc": 0.7907954454421997,
+      "coolant_c": 32.0,
+      "demand_kw": 15.360845565795898,
+      "current_a": 39.52448964457218,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 68.97749615287808,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 344.8874807643903,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04480823328089,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 230,
+      "temperatures_c": [
+        32.04709243774414,
+        32.04709243774414,
+        32.04709243774414,
+        32.04709243774414
+      ],
+      "soc": 0.7904436588287354,
+      "coolant_c": 32.0,
+      "demand_kw": 14.546527862548828,
+      "current_a": 42.38190142285578,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 70.63479854623176,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 353.1739927311587,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.047093719814555,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 235,
+      "temperatures_c": [
+        32.048011779785156,
+        32.048011779785156,
+        32.048011779785156,
+        32.048011779785156
+      ],
+      "soc": 0.7902288436889648,
+      "coolant_c": 32.0,
+      "demand_kw": 8.957196235656738,
+      "current_a": 18.414035876058204,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 72.16179613233983,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 360.808980661699,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04801129554998,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 240,
+      "temperatures_c": [
+        32.048519134521484,
+        32.048519134521484,
+        32.048519134521484,
+        32.048519134521484
+      ],
+      "soc": 0.7900551557540894,
+      "coolant_c": 32.0,
+      "demand_kw": 6.993649005889893,
+      "current_a": 23.110738171484645,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 73.64962315857777,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 368.2481157928887,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04851774454376,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 245,
+      "temperatures_c": [
+        32.049251556396484,
+        32.049251556396484,
+        32.049251556396484,
+        32.049251556396484
+      ],
+      "soc": 0.789850652217865,
+      "coolant_c": 32.0,
+      "demand_kw": 14.687321662902832,
+      "current_a": 33.04382523345525,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 75.16681757102457,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 375.8340878551227,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.04925033960913,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 250,
+      "temperatures_c": [
+        32.05055618286133,
+        32.05055618286133,
+        32.05055618286133,
+        32.05055618286133
+      ],
+      "soc": 0.7895907163619995,
+      "coolant_c": 32.0,
+      "demand_kw": 9.240287780761719,
+      "current_a": 24.036712744925342,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 76.736908691509,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 383.68454345754486,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05055528227584,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 255,
+      "temperatures_c": [
+        32.05137252807617,
+        32.05137252807617,
+        32.05137252807617,
+        32.05137252807617
+      ],
+      "soc": 0.7893773317337036,
+      "coolant_c": 32.0,
+      "demand_kw": 7.369661808013916,
+      "current_a": 24.225621163679044,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 78.2627435952225,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 391.3137179761124,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05137291991063,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 260,
+      "temperatures_c": [
+        32.052947998046875,
+        32.052947998046875,
+        32.052947998046875,
+        32.052947998046875
+      ],
+      "soc": 0.7891007661819458,
+      "coolant_c": 32.0,
+      "demand_kw": 9.641345977783203,
+      "current_a": 25.090364312332824,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 79.848784756957,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 399.24392378478484,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.052949019219035,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 265,
+      "temperatures_c": [
+        32.05361557006836,
+        32.05361557006836,
+        32.05361557006836,
+        32.05361557006836
+      ],
+      "soc": 0.788912832736969,
+      "coolant_c": 32.0,
+      "demand_kw": -2.133948802947998,
+      "current_a": 19.837657083523965,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 81.35051948294448,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 406.7525974147222,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 270,
+      "temperatures_c": [
+        32.053565979003906,
+        32.053565979003906,
+        32.053565979003906,
+        32.053565979003906
+      ],
+      "soc": 0.7888849377632141,
+      "coolant_c": 32.0,
+      "demand_kw": -0.05145775154232979,
+      "current_a": -0.024160964790420937,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 82.7170618073894,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 413.58530903694674,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 275,
+      "temperatures_c": [
+        32.0534782409668,
+        32.0534782409668,
+        32.0534782409668,
+        32.0534782409668
+      ],
+      "soc": 0.7888034582138062,
+      "coolant_c": 32.0,
+      "demand_kw": 4.691889762878418,
+      "current_a": 12.307720171332377,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 84.11784700306288,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 420.5892350153141,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 280,
+      "temperatures_c": [
+        32.053306579589844,
+        32.053306579589844,
+        32.053306579589844,
+        32.053306579589844
+      ],
+      "soc": 0.78872150182724,
+      "coolant_c": 32.0,
+      "demand_kw": -2.295799732208252,
+      "current_a": 6.968944636545581,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 85.5186230613074,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 427.5931153065367,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 285,
+      "temperatures_c": [
+        32.05340576171875,
+        32.05340576171875,
+        32.05340576171875,
+        32.05340576171875
+      ],
+      "soc": 0.7888540029525757,
+      "coolant_c": 32.0,
+      "demand_kw": -5.872273921966553,
+      "current_a": -24.97684712352425,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 86.96754264923428,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 434.83771324617106,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 290,
+      "temperatures_c": [
+        32.053165435791016,
+        32.053165435791016,
+        32.053165435791016,
+        32.053165435791016
+      ],
+      "soc": 0.7889666557312012,
+      "coolant_c": 32.0,
+      "demand_kw": -2.9503002166748047,
+      "current_a": -5.7079064168314835,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 88.39757855097093,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 441.9878927548544,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 295,
+      "temperatures_c": [
+        32.05265808105469,
+        32.05265808105469,
+        32.05265808105469,
+        32.05265808105469
+      ],
+      "soc": 0.7890415191650391,
+      "coolant_c": 32.0,
+      "demand_kw": 0.02843044325709343,
+      "current_a": -6.958303306067113,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 89.79154740354171,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 448.95773701770827,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.05361567598008,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 300,
+      "temperatures_c": [
+        32.05544662475586,
+        32.05544662475586,
+        32.05544662475586,
+        32.05544662475586
+      ],
+      "soc": 0.7887022495269775,
+      "coolant_c": 32.0,
+      "demand_kw": 35.67025375366211,
+      "current_a": 80.64009376336232,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 91.43735913363173,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 457.1867956681583,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.055447943208726,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 305,
+      "temperatures_c": [
+        32.06271743774414,
+        32.06271743774414,
+        32.06271743774414,
+        32.06271743774414
+      ],
+      "soc": 0.7880786061286926,
+      "coolant_c": 32.0,
+      "demand_kw": 18.720985412597656,
+      "current_a": 56.24697891448975,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 93.3545376093608,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 466.77268804680364,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.06271587259023,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 310,
+      "temperatures_c": [
+        32.064945220947266,
+        32.064945220947266,
+        32.064945220947266,
+        32.064945220947266
+      ],
+      "soc": 0.7877244353294373,
+      "coolant_c": 32.0,
+      "demand_kw": 16.71352767944336,
+      "current_a": 42.94948930496829,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 95.01528162932533,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 475.07640814662625,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.06494458261653,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 315,
+      "temperatures_c": [
+        32.066566467285156,
+        32.066566467285156,
+        32.066566467285156,
+        32.066566467285156
+      ],
+      "soc": 0.7874295115470886,
+      "coolant_c": 32.0,
+      "demand_kw": 10.179099082946777,
+      "current_a": 31.097125188913417,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 96.61966330124409,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 483.09831650622004,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.06656823066508,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 320,
+      "temperatures_c": [
+        32.06795120239258,
+        32.06795120239258,
+        32.06795120239258,
+        32.06795120239258
+      ],
+      "soc": 0.7871623635292053,
+      "coolant_c": 32.0,
+      "demand_kw": 14.360349655151367,
+      "current_a": 41.89709790889406,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 98.19767159182808,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 490.98835795914,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.06794930938766,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 325,
+      "temperatures_c": [
+        32.07114028930664,
+        32.07114028930664,
+        32.07114028930664,
+        32.07114028930664
+      ],
+      "soc": 0.7867646217346191,
+      "coolant_c": 32.0,
+      "demand_kw": 23.541706085205078,
+      "current_a": 60.47140635643062,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 99.90024391440485,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 499.5012195720239,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.07114051006942,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 330,
+      "temperatures_c": [
+        32.076507568359375,
+        32.076507568359375,
+        32.076507568359375,
+        32.076507568359375
+      ],
+      "soc": 0.7862500548362732,
+      "coolant_c": 32.0,
+      "demand_kw": 25.832393646240234,
+      "current_a": 66.50620264707074,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 101.71451575360688,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 508.572578768034,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.076506345125416,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 335,
+      "temperatures_c": [
+        32.08324432373047,
+        32.08324432373047,
+        32.08324432373047,
+        32.08324432373047
+      ],
+      "soc": 0.7856842875480652,
+      "coolant_c": 32.0,
+      "demand_kw": 25.987207412719727,
+      "current_a": 67.14469105130472,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 103.57801894386053,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 517.8900947193023,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.08324315667666,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 340,
+      "temperatures_c": [
+        32.08770751953125,
+        32.08770751953125,
+        32.08770751953125,
+        32.08770751953125
+      ],
+      "soc": 0.7852638363838196,
+      "coolant_c": 32.0,
+      "demand_kw": 20.051898956298828,
+      "current_a": 46.12167409859768,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 105.30336488353021,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 526.5168244176507,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.08770601107944,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 345,
+      "temperatures_c": [
+        32.091670989990234,
+        32.091670989990234,
+        32.091670989990234,
+        32.091670989990234
+      ],
+      "soc": 0.7848689556121826,
+      "coolant_c": 32.0,
+      "demand_kw": 20.7149600982666,
+      "current_a": 53.82871322232312,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 107.0045618317794,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 535.0228091588966,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.091672433603954,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 350,
+      "temperatures_c": [
+        32.095149993896484,
+        32.095149993896484,
+        32.095149993896484,
+        32.095149993896484
+      ],
+      "soc": 0.784512996673584,
+      "coolant_c": 32.0,
+      "demand_kw": 11.535503387451172,
+      "current_a": 36.38868328510518,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 108.66891424680686,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 543.3445712340339,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.09515004447822,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 355,
+      "temperatures_c": [
+        32.09693908691406,
+        32.09693908691406,
+        32.09693908691406,
+        32.09693908691406
+      ],
+      "soc": 0.7842996716499329,
+      "coolant_c": 32.0,
+      "demand_kw": 11.175159454345703,
+      "current_a": 23.24932814039161,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 110.19731771399735,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 550.9865885699863,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.09694027540969,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 360,
+      "temperatures_c": [
+        32.098506927490234,
+        32.098506927490234,
+        32.098506927490234,
+        32.098506927490234
+      ],
+      "soc": 0.78409343957901,
+      "coolant_c": 32.0,
+      "demand_kw": 8.511650085449219,
+      "current_a": 22.40314102362938,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 111.71908401327369,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 558.5954200663681,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.09850631899811,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 365,
+      "temperatures_c": [
+        32.10007858276367,
+        32.10007858276367,
+        32.10007858276367,
+        32.10007858276367
+      ],
+      "soc": 0.7838650941848755,
+      "coolant_c": 32.0,
+      "demand_kw": 12.903813362121582,
+      "current_a": 27.795914473163265,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 113.26203497843774,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 566.3101748921883,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.100080473762866,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 370,
+      "temperatures_c": [
+        32.102149963378906,
+        32.102149963378906,
+        32.102149963378906,
+        32.102149963378906
+      ],
+      "soc": 0.783579409122467,
+      "coolant_c": 32.0,
+      "demand_kw": 12.950681686401367,
+      "current_a": 33.83019978979662,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 114.8597758944441,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 574.2988794722202,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.10214846516439,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 375,
+      "temperatures_c": [
+        32.104087829589844,
+        32.104087829589844,
+        32.104087829589844,
+        32.104087829589844
+      ],
+      "soc": 0.7833030223846436,
+      "coolant_c": 32.0,
+      "demand_kw": 12.950681686401367,
+      "current_a": 33.83091150854933,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 116.44879930072533,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 582.2439965036264,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.10408670944913,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 380,
+      "temperatures_c": [
+        32.10531997680664,
+        32.10531997680664,
+        32.10531997680664,
+        32.10531997680664
+      ],
+      "soc": 0.7831065058708191,
+      "coolant_c": 32.0,
+      "demand_kw": 8.049141883850098,
+      "current_a": 15.344276375208663,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 117.96170300525174,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 589.8085150262584,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.10532165859838,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 385,
+      "temperatures_c": [
+        32.107330322265625,
+        32.107330322265625,
+        32.107330322265625,
+        32.107330322265625
+      ],
+      "soc": 0.7828198671340942,
+      "coolant_c": 32.0,
+      "demand_kw": 19.521556854248047,
+      "current_a": 50.66816865838754,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 119.56068920280224,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 597.8034460140109,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.10733165933824,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 390,
+      "temperatures_c": [
+        32.11042785644531,
+        32.11042785644531,
+        32.11042785644531,
+        32.11042785644531
+      ],
+      "soc": 0.7824458479881287,
+      "coolant_c": 32.0,
+      "demand_kw": 13.139497756958008,
+      "current_a": 40.29914289276996,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 121.2432656580615,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 606.2163282903073,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.11042970514451,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 395,
+      "temperatures_c": [
+        32.11166000366211,
+        32.11166000366211,
+        32.11166000366211,
+        32.11166000366211
+      ],
+      "soc": 0.7822464108467102,
+      "coolant_c": 32.0,
+      "demand_kw": 5.925814151763916,
+      "current_a": 15.706503661760474,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 122.75928874672948,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 613.7964437336472,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.11166168299574,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 400,
+      "temperatures_c": [
+        32.11432647705078,
+        32.11432647705078,
+        32.11432647705078,
+        32.11432647705078
+      ],
+      "soc": 0.781926155090332,
+      "coolant_c": 32.0,
+      "demand_kw": 22.252975463867188,
+      "current_a": 57.69840943360737,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 124.39082322030092,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 621.9541161015043,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.114327241518104,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 405,
+      "temperatures_c": [
+        32.11757278442383,
+        32.11757278442383,
+        32.11757278442383,
+        32.11757278442383
+      ],
+      "soc": 0.7815526127815247,
+      "coolant_c": 32.0,
+      "demand_kw": 13.42677116394043,
+      "current_a": 35.09939547887887,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 126.07339859892515,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 630.3669929946254,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.11757343375886,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 410,
+      "temperatures_c": [
+        32.11943054199219,
+        32.11943054199219,
+        32.11943054199219,
+        32.11943054199219
+      ],
+      "soc": 0.7812861204147339,
+      "coolant_c": 32.0,
+      "demand_kw": 10.998273849487305,
+      "current_a": 28.837893325704837,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 127.6539160487679,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 638.2695802438392,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.119428908305956,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 415,
+      "temperatures_c": [
+        32.121681213378906,
+        32.121681213378906,
+        32.121681213378906,
+        32.121681213378906
+      ],
+      "soc": 0.7809814810752869,
+      "coolant_c": 32.0,
+      "demand_kw": 15.77112865447998,
+      "current_a": 41.1333141323986,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 129.27095716890577,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 646.3547858445286,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.12168003053096,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 420,
+      "temperatures_c": [
+        32.125919342041016,
+        32.125919342041016,
+        32.125919342041016,
+        32.125919342041016
+      ],
+      "soc": 0.780546247959137,
+      "coolant_c": 32.0,
+      "demand_kw": 23.74555206298828,
+      "current_a": 55.48015540256477,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 131.01292569997574,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 655.0646284998785,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.12591979597347,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 425,
+      "temperatures_c": [
+        32.12885284423828,
+        32.12885284423828,
+        32.12885284423828,
+        32.12885284423828
+      ],
+      "soc": 0.7802197337150574,
+      "coolant_c": 32.0,
+      "demand_kw": 9.410221099853516,
+      "current_a": 24.797257939138866,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 132.6513886771588,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 663.2569433857938,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.12885207883229,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 430,
+      "temperatures_c": [
+        32.13044357299805,
+        32.13044357299805,
+        32.13044357299805,
+        32.13044357299805
+      ],
+      "soc": 0.7799913883209229,
+      "coolant_c": 32.0,
+      "demand_kw": 9.117093086242676,
+      "current_a": 30.146204327844515,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 134.19610998676632,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 670.9805499338313,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.130445309426065,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 435,
+      "temperatures_c": [
+        32.132076263427734,
+        32.132076263427734,
+        32.132076263427734,
+        32.132076263427734
+      ],
+      "soc": 0.7797488570213318,
+      "coolant_c": 32.0,
+      "demand_kw": 11.264420509338379,
+      "current_a": 35.62382380896913,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 135.754515488897,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 678.7725774444847,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.13207446318852,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 440,
+      "temperatures_c": [
+        32.13358688354492,
+        32.13358688354492,
+        32.13358688354492,
+        32.13358688354492
+      ],
+      "soc": 0.7795103192329407,
+      "coolant_c": 32.0,
+      "demand_kw": 13.378552436828613,
+      "current_a": 28.96334509476949,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 137.3092039080622,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 686.5460195403106,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.13358736189722,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 445,
+      "temperatures_c": [
+        32.13565444946289,
+        32.13565444946289,
+        32.13565444946289,
+        32.13565444946289
+      ],
+      "soc": 0.7792144417762756,
+      "coolant_c": 32.0,
+      "demand_kw": 15.77112865447998,
+      "current_a": 41.14673737867168,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 138.9187952902079,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 694.5939764510391,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.13565432428797,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 450,
+      "temperatures_c": [
+        32.13789367675781,
+        32.13789367675781,
+        32.13789367675781,
+        32.13789367675781
+      ],
+      "soc": 0.7789061069488525,
+      "coolant_c": 32.0,
+      "demand_kw": 11.175159454345703,
+      "current_a": 35.37305794718619,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 140.54041390213587,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 702.7020695106789,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.137894026921295,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 455,
+      "temperatures_c": [
+        32.139671325683594,
+        32.139671325683594,
+        32.139671325683594,
+        32.139671325683594
+      ],
+      "soc": 0.7786387205123901,
+      "coolant_c": 32.0,
+      "demand_kw": 13.42677116394043,
+      "current_a": 35.11895330984395,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 142.12302562810535,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 710.6151281405264,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.13967123837804,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 460,
+      "temperatures_c": [
+        32.14164352416992,
+        32.14164352416992,
+        32.14164352416992,
+        32.14164352416992
+      ],
+      "soc": 0.7783522009849548,
+      "coolant_c": 32.0,
+      "demand_kw": 15.77112865447998,
+      "current_a": 41.155333591771985,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 143.7240475514006,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 718.6202377570025,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.141644955221054,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 465,
+      "temperatures_c": [
+        32.144004821777344,
+        32.144004821777344,
+        32.144004821777344,
+        32.144004821777344
+      ],
+      "soc": 0.778033435344696,
+      "coolant_c": 32.0,
+      "demand_kw": 13.572243690490723,
+      "current_a": 35.509352604567916,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 145.35598281703298,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 726.7799140851645,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.14400515035987,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 470,
+      "temperatures_c": [
+        32.1455192565918,
+        32.1455192565918,
+        32.1455192565918,
+        32.1455192565918
+      ],
+      "soc": 0.7777948975563049,
+      "coolant_c": 32.0,
+      "demand_kw": 6.345971584320068,
+      "current_a": 22.847142592015796,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 146.91139065295354,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 734.5569532647672,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.14552061568507,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 475,
+      "temperatures_c": [
+        32.14612579345703,
+        32.14612579345703,
+        32.14612579345703,
+        32.14612579345703
+      ],
+      "soc": 0.7776834964752197,
+      "coolant_c": 32.0,
+      "demand_kw": 10.27054500579834,
+      "current_a": 3.609999775166275,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 148.34534983282649,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 741.7267491641319,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.14612521213705,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 480,
+      "temperatures_c": [
+        32.146827697753906,
+        32.146827697753906,
+        32.146827697753906,
+        32.146827697753906
+      ],
+      "soc": 0.7775156497955322,
+      "coolant_c": 32.0,
+      "demand_kw": 9.860320091247559,
+      "current_a": 25.85022115428553,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 149.83326550133418,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 749.1663275066704,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.14682708253433,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 485,
+      "temperatures_c": [
+        32.14798355102539,
+        32.14798355102539,
+        32.14798355102539,
+        32.14798355102539
+      ],
+      "soc": 0.7772780656814575,
+      "coolant_c": 32.0,
+      "demand_kw": 11.994202613830566,
+      "current_a": 31.34411969007091,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 151.38793038077722,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 756.9396519038856,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.147982184008654,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 490,
+      "temperatures_c": [
+        32.14942169189453,
+        32.14942169189453,
+        32.14942169189453,
+        32.14942169189453
+      ],
+      "soc": 0.777012050151825,
+      "coolant_c": 32.0,
+      "demand_kw": 12.038442611694336,
+      "current_a": 31.464030662806607,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 152.9698273444017,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 764.849136722008,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.14942007209986,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 495,
+      "temperatures_c": [
+        32.15088653564453,
+        32.15088653564453,
+        32.15088653564453,
+        32.15088653564453
+      ],
+      "soc": 0.7767452597618103,
+      "coolant_c": 32.0,
+      "demand_kw": 9.860320091247559,
+      "current_a": 31.584148201669986,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 154.55258416623982,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 772.7629208311986,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.15088606369687,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 500,
+      "temperatures_c": [
+        32.15190505981445,
+        32.15190505981445,
+        32.15190505981445,
+        32.15190505981445
+      ],
+      "soc": 0.7765267491340637,
+      "coolant_c": 32.0,
+      "demand_kw": 9.699864387512207,
+      "current_a": 25.435095549957918,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 156.0892315864162,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 780.4461579320804,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.151904611277644,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 505,
+      "temperatures_c": [
+        32.15278244018555,
+        32.15278244018555,
+        32.15278244018555,
+        32.15278244018555
+      ],
+      "soc": 0.7763218879699707,
+      "coolant_c": 32.0,
+      "demand_kw": 9.502182006835938,
+      "current_a": 24.914318844086257,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 157.61291497980844,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 788.0645748990416,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.15278312770544,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 510,
+      "temperatures_c": [
+        32.153839111328125,
+        32.153839111328125,
+        32.153839111328125,
+        32.153839111328125
+      ],
+      "soc": 0.7760919332504272,
+      "coolant_c": 32.0,
+      "demand_kw": 11.601821899414062,
+      "current_a": 30.320672133648056,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 159.16058602692735,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 795.8029301346362,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.15383929226743,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 515,
+      "temperatures_c": [
+        32.15504837036133,
+        32.15504837036133,
+        32.15504837036133,
+        32.15504837036133
+      ],
+      "soc": 0.7758442163467407,
+      "coolant_c": 32.0,
+      "demand_kw": 11.601821899414062,
+      "current_a": 30.32326307352037,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 160.72536086132155,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 803.6268043066071,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.15504928786661,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 520,
+      "temperatures_c": [
+        32.15719223022461,
+        32.15719223022461,
+        32.15719223022461,
+        32.15719223022461
+      ],
+      "soc": 0.7755193710327148,
+      "coolant_c": 32.0,
+      "demand_kw": 14.1644287109375,
+      "current_a": 48.335801221803564,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 162.3639503533851,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 811.8197517669248,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.15719137038109,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 525,
+      "temperatures_c": [
+        32.159019470214844,
+        32.159019470214844,
+        32.159019470214844,
+        32.159019470214844
+      ],
+      "soc": 0.7752240300178528,
+      "coolant_c": 32.0,
+      "demand_kw": 14.357892036437988,
+      "current_a": 31.717592336203094,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 163.974518258866,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 819.8725912943294,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.1590176986219,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 530,
+      "temperatures_c": [
+        32.161041259765625,
+        32.161041259765625,
+        32.161041259765625,
+        32.161041259765625
+      ],
+      "soc": 0.7749148011207581,
+      "coolant_c": 32.0,
+      "demand_kw": 14.602643966674805,
+      "current_a": 38.10754412307065,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 165.598425665433,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 827.9921283271643,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16104047786822,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 535,
+      "temperatures_c": [
+        32.162960052490234,
+        32.162960052490234,
+        32.162960052490234,
+        32.162960052490234
+      ],
+      "soc": 0.7746199369430542,
+      "coolant_c": 32.0,
+      "demand_kw": 12.487983703613281,
+      "current_a": 32.67625650456284,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 167.20875228286755,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 836.043761414337,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16295816425052,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 540,
+      "temperatures_c": [
+        32.164573669433594,
+        32.164573669433594,
+        32.164573669433594,
+        32.164573669433594
+      ],
+      "soc": 0.7743529677391052,
+      "coolant_c": 32.0,
+      "demand_kw": 12.487983703613281,
+      "current_a": 32.6781737502065,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 168.7924979968384,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 843.9624899841912,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16457486659763,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 545,
+      "temperatures_c": [
+        32.16618728637695,
+        32.16618728637695,
+        32.16618728637695,
+        32.16618728637695
+      ],
+      "soc": 0.7740859389305115,
+      "coolant_c": 32.0,
+      "demand_kw": 12.487983703613281,
+      "current_a": 32.68013639708224,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 170.37635785511156,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 851.881789275557,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16618698819287,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 550,
+      "temperatures_c": [
+        32.1676025390625,
+        32.1676025390625,
+        32.1676025390625,
+        32.1676025390625
+      ],
+      "soc": 0.7738389372825623,
+      "coolant_c": 32.0,
+      "demand_kw": 7.899209499359131,
+      "current_a": 26.63529633592085,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 171.94121799344413,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 859.7060899672198,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16760266345426,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 555,
+      "temperatures_c": [
+        32.16844177246094,
+        32.16844177246094,
+        32.16844177246094,
+        32.16844177246094
+      ],
+      "soc": 0.7736543416976929,
+      "coolant_c": 32.0,
+      "demand_kw": 9.820012092590332,
+      "current_a": 25.773185791378612,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 173.44640815294161,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 867.2320407647072,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.168440704269536,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 560,
+      "temperatures_c": [
+        32.169105529785156,
+        32.169105529785156,
+        32.169105529785156,
+        32.169105529785156
+      ],
+      "soc": 0.7734856009483337,
+      "coolant_c": 32.0,
+      "demand_kw": 5.111351013183594,
+      "current_a": 24.829881266393315,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 174.93648330695413,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 874.6824165347698,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16910388896131,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 565,
+      "temperatures_c": [
+        32.16947555541992,
+        32.16947555541992,
+        32.16947555541992,
+        32.16947555541992
+      ],
+      "soc": 0.7733529210090637,
+      "coolant_c": 32.0,
+      "demand_kw": 4.748772144317627,
+      "current_a": 18.115415851154253,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 176.39210558573885,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 881.9605279286934,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.16947641047004,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 570,
+      "temperatures_c": [
+        32.16984939575195,
+        32.16984939575195,
+        32.16984939575195,
+        32.16984939575195
+      ],
+      "soc": 0.7732007503509521,
+      "coolant_c": 32.0,
+      "demand_kw": 10.766404151916504,
+      "current_a": 22.735594703801596,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 177.86637628924453,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 889.3318814462218,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.169849475561065,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 575,
+      "temperatures_c": [
+        32.17076873779297,
+        32.17076873779297,
+        32.17076873779297,
+        32.17076873779297
+      ],
+      "soc": 0.7729706764221191,
+      "coolant_c": 32.0,
+      "demand_kw": 10.766404151916504,
+      "current_a": 22.737731832860753,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 179.41523905238398,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 897.0761952619191,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17076731549347,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 580,
+      "temperatures_c": [
+        32.17112350463867,
+        32.17112350463867,
+        32.17112350463867,
+        32.17112350463867
+      ],
+      "soc": 0.7728227972984314,
+      "coolant_c": 32.0,
+      "demand_kw": 2.1901955604553223,
+      "current_a": 11.262646013374022,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 180.88548067087328,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 904.4274033543655,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17112199057097,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 585,
+      "temperatures_c": [
+        32.17091369628906,
+        32.17091369628906,
+        32.17091369628906,
+        32.17091369628906
+      ],
+      "soc": 0.7728064060211182,
+      "coolant_c": 32.0,
+      "demand_kw": 0.12682358920574188,
+      "current_a": -2.509772362935656,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 182.2377616232964,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 911.1888081164811,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17112199057097,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 590,
+      "temperatures_c": [
+        32.1711311340332,
+        32.1711311340332,
+        32.1711311340332,
+        32.1711311340332
+      ],
+      "soc": 0.7726560235023499,
+      "coolant_c": 32.0,
+      "demand_kw": 15.11573314666748,
+      "current_a": 29.20802962479177,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 183.71038478927662,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 918.5519239463822,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17113170419983,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 595,
+      "temperatures_c": [
+        32.17251968383789,
+        32.17251968383789,
+        32.17251968383789,
+        32.17251968383789
+      ],
+      "soc": 0.7723692059516907,
+      "coolant_c": 32.0,
+      "demand_kw": 7.662338733673096,
+      "current_a": 25.18353159010299,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 185.3136160832902,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 926.5680804164501,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17252063262923,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 600,
+      "temperatures_c": [
+        32.17267608642578,
+        32.17267608642578,
+        32.17267608642578,
+        32.17267608642578
+      ],
+      "soc": 0.7722321152687073,
+      "coolant_c": 32.0,
+      "demand_kw": 3.5206515789031982,
+      "current_a": 9.361990473852853,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 186.77365315898007,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 933.8682657948995,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17273605588729,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 605,
+      "temperatures_c": [
+        32.1729621887207,
+        32.1729621887207,
+        32.1729621887207,
+        32.1729621887207
+      ],
+      "soc": 0.7720685601234436,
+      "coolant_c": 32.0,
+      "demand_kw": 16.966205596923828,
+      "current_a": 33.97327462560856,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 188.25897537805838,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 941.2948768902911,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.172963229386866,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 610,
+      "temperatures_c": [
+        32.17459487915039,
+        32.17459487915039,
+        32.17459487915039,
+        32.17459487915039
+      ],
+      "soc": 0.7717821002006531,
+      "coolant_c": 32.0,
+      "demand_kw": -4.404576301574707,
+      "current_a": 19.916402117943342,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 189.86198222407552,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 949.3099111203768,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.174595160638006,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 615,
+      "temperatures_c": [
+        32.174591064453125,
+        32.174591064453125,
+        32.174591064453125,
+        32.174591064453125
+      ],
+      "soc": 0.7717728018760681,
+      "coolant_c": 32.0,
+      "demand_kw": 10.440957069396973,
+      "current_a": 22.396472164923164,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 191.30710894056006,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 956.5355447027995,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.174595160638006,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 620,
+      "temperatures_c": [
+        32.17936706542969,
+        32.17936706542969,
+        32.17936706542969,
+        32.17936706542969
+      ],
+      "soc": 0.771281361579895,
+      "coolant_c": 32.0,
+      "demand_kw": 28.077177047729492,
+      "current_a": 61.8825798420683,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 193.1064588535577,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 965.5322942677877,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.17936753700285,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 625,
+      "temperatures_c": [
+        32.18471908569336,
+        32.18471908569336,
+        32.18471908569336,
+        32.18471908569336
+      ],
+      "soc": 0.7707613706588745,
+      "coolant_c": 32.0,
+      "demand_kw": 24.0858211517334,
+      "current_a": 45.79840479705092,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 194.9335199352573,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 974.6675996762856,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.184719982149005,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 630,
+      "temperatures_c": [
+        32.188232421875,
+        32.188232421875,
+        32.188232421875,
+        32.188232421875
+      ],
+      "soc": 0.7703554034233093,
+      "coolant_c": 32.0,
+      "demand_kw": 20.771385192871094,
+      "current_a": 48.274236120612734,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 196.6517841396428,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 983.2589206982132,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.188234190903096,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 635,
+      "temperatures_c": [
+        32.190277099609375,
+        32.190277099609375,
+        32.190277099609375,
+        32.190277099609375
+      ],
+      "soc": 0.7701149582862854,
+      "coolant_c": 32.0,
+      "demand_kw": -4.283935070037842,
+      "current_a": 2.572729068969011,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 198.21169557999949,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 991.0584778999965,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.190276003665815,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 640,
+      "temperatures_c": [
+        32.19197082519531,
+        32.19197082519531,
+        32.19197082519531,
+        32.19197082519531
+      ],
+      "soc": 0.7703796625137329,
+      "coolant_c": 32.0,
+      "demand_kw": 3.1065025329589844,
+      "current_a": -34.34043505497644,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 199.79492223160983,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 998.9746111580483,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.19197146031421,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 645,
+      "temperatures_c": [
+        32.19281768798828,
+        32.19281768798828,
+        32.19281768798828,
+        32.19281768798828
+      ],
+      "soc": 0.7701713442802429,
+      "coolant_c": 32.0,
+      "demand_kw": 22.131492614746094,
+      "current_a": 47.29987564888204,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 201.32422622527426,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1006.6211311263705,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.192817021488,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 650,
+      "temperatures_c": [
+        32.19718933105469,
+        32.19718933105469,
+        32.19718933105469,
+        32.19718933105469
+      ],
+      "soc": 0.7696858048439026,
+      "coolant_c": 32.0,
+      "demand_kw": 20.234830856323242,
+      "current_a": 62.80034704176346,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 203.11921640068647,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1015.5960820034315,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.19719094017617,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 655,
+      "temperatures_c": [
+        32.20085144042969,
+        32.20085144042969,
+        32.20085144042969,
+        32.20085144042969
+      ],
+      "soc": 0.7692570090293884,
+      "coolant_c": 32.0,
+      "demand_kw": 2.5270512104034424,
+      "current_a": 45.115843083297456,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 204.86013854135885,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1024.3006927067936,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.20085043220596,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 660,
+      "temperatures_c": [
+        32.201297760009766,
+        32.201297760009766,
+        32.201297760009766,
+        32.201297760009766
+      ],
+      "soc": 0.7691622972488403,
+      "coolant_c": 32.0,
+      "demand_kw": 12.427229881286621,
+      "current_a": 27.13010901879006,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 206.2811579418953,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1031.4057897094758,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.20129925042841,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 665,
+      "temperatures_c": [
+        32.20352554321289,
+        32.20352554321289,
+        32.20352554321289,
+        32.20352554321289
+      ],
+      "soc": 0.7688292264938354,
+      "coolant_c": 32.0,
+      "demand_kw": 17.186145782470703,
+      "current_a": 39.2645249841231,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 207.9305449202388,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1039.6527246011933,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.20352643007059,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 670,
+      "temperatures_c": [
+        32.20505905151367,
+        32.20505905151367,
+        32.20505905151367,
+        32.20505905151367
+      ],
+      "soc": 0.7685847282409668,
+      "coolant_c": 32.0,
+      "demand_kw": 10.888556480407715,
+      "current_a": 12.173065581302145,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 209.49528455219615,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1047.47642276098,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.20505863423855,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 675,
+      "temperatures_c": [
+        32.20661163330078,
+        32.20661163330078,
+        32.20661163330078,
+        32.20661163330078
+      ],
+      "soc": 0.7683140635490417,
+      "coolant_c": 32.0,
+      "demand_kw": 4.690088272094727,
+      "current_a": 28.94530887799248,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 211.08512457424447,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1055.4256228712218,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.206609733523,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 680,
+      "temperatures_c": [
+        32.206756591796875,
+        32.206756591796875,
+        32.206756591796875,
+        32.206756591796875
+      ],
+      "soc": 0.7682707905769348,
+      "coolant_c": 32.0,
+      "demand_kw": 2.0530412197113037,
+      "current_a": -2.1293210438502803,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 212.47008569818698,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1062.3504284909343,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.20676194320889,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 685,
+      "temperatures_c": [
+        32.20699691772461,
+        32.20699691772461,
+        32.20699691772461,
+        32.20699691772461
+      ],
+      "soc": 0.7681443691253662,
+      "coolant_c": 32.0,
+      "demand_kw": 9.790630340576172,
+      "current_a": 20.462106797422926,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 213.92181259076474,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1069.609062953823,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.206995240900085,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 690,
+      "temperatures_c": [
+        32.2087287902832,
+        32.2087287902832,
+        32.2087287902832,
+        32.2087287902832
+      ],
+      "soc": 0.7678372859954834,
+      "coolant_c": 32.0,
+      "demand_kw": 20.470394134521484,
+      "current_a": 47.759490819638295,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 215.5467209626566,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1077.7336048132822,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.208728942865875,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 695,
+      "temperatures_c": [
+        32.2113037109375,
+        32.2113037109375,
+        32.2113037109375,
+        32.2113037109375
+      ],
+      "soc": 0.7674777507781982,
+      "coolant_c": 32.0,
+      "demand_kw": 17.133255004882812,
+      "current_a": 33.721465870963456,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 217.22196535620537,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1086.109826781026,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.21130371413979,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 700,
+      "temperatures_c": [
+        32.21502685546875,
+        32.21502685546875,
+        32.21502685546875,
+        32.21502685546875
+      ],
+      "soc": 0.7670450806617737,
+      "coolant_c": 32.0,
+      "demand_kw": 18.270122528076172,
+      "current_a": 58.86409145105117,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 218.9675345548649,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1094.8376727743234,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.21502813930654,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 705,
+      "temperatures_c": [
+        32.21874237060547,
+        32.21874237060547,
+        32.21874237060547,
+        32.21874237060547
+      ],
+      "soc": 0.7666259407997131,
+      "coolant_c": 32.0,
+      "demand_kw": 16.964506149291992,
+      "current_a": 55.95398570214493,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 220.70043774058396,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1103.5021887029188,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.21874333083573,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 710,
+      "temperatures_c": [
+        32.221527099609375,
+        32.221527099609375,
+        32.221527099609375,
+        32.221527099609375
+      ],
+      "soc": 0.7662774324417114,
+      "coolant_c": 32.0,
+      "demand_kw": 17.397552490234375,
+      "current_a": 45.44355992081133,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 222.36578507878517,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1111.828925393925,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.221525357218006,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 715,
+      "temperatures_c": [
+        32.225677490234375,
+        32.225677490234375,
+        32.225677490234375,
+        32.225677490234375
+      ],
+      "soc": 0.76584792137146,
+      "coolant_c": 32.0,
+      "demand_kw": 27.699012756347656,
+      "current_a": 65.90458748578763,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 224.10898708288994,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1120.544935414449,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.22567738315376,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 720,
+      "temperatures_c": [
+        32.229331970214844,
+        32.229331970214844,
+        32.229331970214844,
+        32.229331970214844
+      ],
+      "soc": 0.765488862991333,
+      "coolant_c": 32.0,
+      "demand_kw": 6.710983753204346,
+      "current_a": 17.868655348866845,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 225.78500529508372,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1128.9250264754178,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.22933286212273,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 725,
+      "temperatures_c": [
+        32.23019027709961,
+        32.23019027709961,
+        32.23019027709961,
+        32.23019027709961
+      ],
+      "soc": 0.7653710246086121,
+      "coolant_c": 32.0,
+      "demand_kw": 6.098535537719727,
+      "current_a": 22.192772617976818,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 227.22978126207076,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1136.148906310353,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.23019141772195,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 730,
+      "temperatures_c": [
+        32.230735778808594,
+        32.230735778808594,
+        32.230735778808594,
+        32.230735778808594
+      ],
+      "soc": 0.7653189301490784,
+      "coolant_c": 32.0,
+      "demand_kw": 0.8916211724281311,
+      "current_a": -11.040323810651294,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 228.65911774880928,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1143.2955887440455,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.230735377251264,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 735,
+      "temperatures_c": [
+        32.2308464050293,
+        32.2308464050293,
+        32.2308464050293,
+        32.2308464050293
+      ],
+      "soc": 0.7652677893638611,
+      "coolant_c": 32.0,
+      "demand_kw": 0.5398457646369934,
+      "current_a": 6.860177428102707,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 230.0400290866591,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1150.2001454332947,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.230847959546104,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 740,
+      "temperatures_c": [
+        32.23080825805664,
+        32.23080825805664,
+        32.23080825805664,
+        32.23080825805664
+      ],
+      "soc": 0.7653345465660095,
+      "coolant_c": 32.0,
+      "demand_kw": -4.404917240142822,
+      "current_a": -14.427813476757468,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 231.44031219729845,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1157.2015609864914,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.230847959546104,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 745,
+      "temperatures_c": [
+        32.2309684753418,
+        32.2309684753418,
+        32.2309684753418,
+        32.2309684753418
+      ],
+      "soc": 0.7654931545257568,
+      "coolant_c": 32.0,
+      "demand_kw": -27.162452697753906,
+      "current_a": -32.2396418858001,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 232.92425510586375,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1164.621275529318,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.23096842070258,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 750,
+      "temperatures_c": [
+        32.23453903198242,
+        32.23453903198242,
+        32.23453903198242,
+        32.23453903198242
+      ],
+      "soc": 0.765956699848175,
+      "coolant_c": 32.0,
+      "demand_kw": -11.391465187072754,
+      "current_a": -35.568647116256976,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 234.7007753600452,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1173.5038768002253,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.2345380824634,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 755,
+      "temperatures_c": [
+        32.234619140625,
+        32.234619140625,
+        32.234619140625,
+        32.234619140625
+      ],
+      "soc": 0.7661571502685547,
+      "coolant_c": 32.0,
+      "demand_kw": -7.215449810028076,
+      "current_a": -18.41938448569422,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 236.2250559311696,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1181.1252796558472,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.234791531783294,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 760,
+      "temperatures_c": [
+        32.23405075073242,
+        32.23405075073242,
+        32.23405075073242,
+        32.23405075073242
+      ],
+      "soc": 0.7662400007247925,
+      "coolant_c": 32.0,
+      "demand_kw": 0.030893240123987198,
+      "current_a": -1.9094012104550169,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 237.63653205214592,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1188.1826602607287,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.234791531783294,
+      "spatial_delta_c": 0.0
+    },
+    {
+      "time_s": 765,
+      "temperatures_c": [
+        32.23331069946289,
+        32.23331069946289,
+        32.23331069946289,
+        32.23331069946289
+      ],
+      "soc": 0.7662295699119568,
+      "coolant_c": 32.0,
+      "demand_kw": 0.699999988079071,
+      "current_a": 1.8195642375847778,
+      "raw_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_action": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shield_seconds_step": 0,
+      "cost": 238.97850103343006,
+      "aux_wh": 0.0,
+      "aging_exposure_s": 1194.8925051671495,
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "max_temperature_c": 32.234791531783294,
+      "spatial_delta_c": 0.0
+    }
+  ],
+  "recorded_comparison": {
+    "cost": {
+      "fresh": 238.97850103343006,
+      "recorded": 238.97850103343006,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "aux_wh": {
+      "fresh": 0.0,
+      "recorded": 0.0,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "aging_exposure_s": {
+      "fresh": 1194.8925051671495,
+      "recorded": 1194.8925051671495,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "violation_seconds": {
+      "fresh": 0,
+      "recorded": 0,
+      "absolute_difference": 0,
+      "matches": true
+    },
+    "shield_seconds": {
+      "fresh": 0,
+      "recorded": 0,
+      "absolute_difference": 0,
+      "matches": true
+    },
+    "max_temperature_c": {
+      "fresh": 32.234791531783294,
+      "recorded": 32.234791531783294,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "spatial_delta_c": {
+      "fresh": 0.0,
+      "recorded": 0.0,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "duration_s": {
+      "fresh": 765,
+      "recorded": 765,
+      "absolute_difference": 0,
+      "matches": true
+    },
+    "violation_percent": {
+      "fresh": 0.0,
+      "recorded": 0.0,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "shield_firing_percent": {
+      "fresh": 0.0,
+      "recorded": 0.0,
+      "absolute_difference": 0.0,
+      "matches": true
+    },
+    "final_soc": {
+      "fresh": 0.7662295706422426,
+      "recorded": 0.7662295706422426,
+      "absolute_difference": 0.0,
+      "matches": true
+    }
+  },
+  "comparison_tolerance": {
+    "relative": 1e-06,
+    "absolute": 1e-06,
+    "exact": [
+      "violation_seconds",
+      "shield_seconds",
+      "duration_s"
+    ]
+  },
+  "reproduces_recorded_metrics": true,
+  "dependencies": {
+    "numpy": "2.5.3",
+    "gymnasium": "1.3.0",
+    "torch": "2.14.0+cpu",
+    "stable-baselines3": "2.9.0"
+  },
+  "source_sha256": {
+    "btms/envs/btms_env.py": "1e1f5493afd1a23bda82fe1fa8da5659efd5b513f943188901574067a96813df",
+    "btms/envs/shield.py": "ed10642bea5ca09ce88e5651d61262fac4ac1e49a8f73f9a62e3ee52b0729ca5",
+    "btms/dashboard/simulation.py": "9eb824332ec0d930ebdec5f4b0d01f1f24dd43d104dc6d0451d6aa4b2abd52dd",
+    "btms/analysis/evaluate.py": "82e3c2098b7c18427d4f06c5463450a0ba2f9079a1ae4481c59789d063b9848f",
+    "btms/agents/sb3_train.py": "846998f9cc88cef5bf9279cd55a45537b8d511dc742439da84e3378c6a908fe3",
+    "btms/utils/normalizer.py": "fa16b49cee39145093aa555f4008621b1c5f44c0e026460a7c9e8ef620e7fd9c",
+    "data/evaluation_episodes.json": "5e85f3b243900736c3db4c98046ae608005f445a05280d4c310dc15719d5527f",
+    "report/results/pid_tuning.json": "210ee7317b2119bbf195fbcacddca732e359cb5a8ba1cf4226c9347f625688f1",
+    "btms/plant/aging.py": "8470fcb6e5f386f86cadf102d18ae9e0e4a881bf91f16d5f4f41066e528c4670",
+    "btms/plant/battery_electrical.py": "6b6e08f86eecdd945a5234c896cbab1e61d1d4a10388f3e1c9561d94772dff8e",
+    "btms/plant/battery_thermal.py": "7d900654e80d57d8df98ec67cb9373de917e231a2841c8a8ade16164cf4a6416",
+    "btms/plant/cooling.py": "b73b731c8a462ce63aa5083dcbb6e385e897a64b497db0b806f10366da063e95",
+    "btms/plant/drive_cycles.py": "22b3ad8f657c0e7e4963496f038f0359c843897a9ceb65f1795bac2d1f854bae",
+    "btms/plant/pack.py": "5ab613187f2aef3d29bdee52528b06d60d9eb29a79cafb4a3e7ad50af56c4a3c",
+    "btms/plant/vehicle.py": "84d4922e5a97a3bc834c85aab44fa015e4bf8854648e141aba54d231c9586216",
+    "btms/plant/__init__.py": "05fa552179bf4ba6f063ee46aad688fcc5973e3cf4f4bd61e9ff71a506c88b49",
+    "btms/controllers/bangbang.py": "5ffefec8f5627121e7117e44dcb0b99e68c23eae42bd92cf45966501a3ee01d6",
+    "btms/controllers/base.py": "eed0049266621eee6a3e9528f69b55ad58a868465b119b8d04d03654f02a53a5",
+    "btms/controllers/mpc.py": "92e108eecafa5beab8725041e77b6c88df7a1174218f05b5cccea2aae18cd364",
+    "btms/controllers/null.py": "b469c127402f3dd11dd9493a42132dee20599fa74287174e76c3a75250299e22",
+    "btms/controllers/pid.py": "ecc2890e8bc490bbebef721f25105bdb0ba192bc5885b5158e5d825aa573118d",
+    "btms/controllers/tuning.py": "aaf77515ca3e66424c2f065e6c70eed2be5583fe947006658b95501451d41e96",
+    "btms/controllers/__init__.py": "6899e4611cec20ca6024401d199c93022a7b878798d0456565b06c7620cc8376"
+  },
+  "runtime_snapshot": "Artifacts and frozen policies are cached for this process. Restart after changing code or study files."
+}

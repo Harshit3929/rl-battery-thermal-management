@@ -1,0 +1,30 @@
+{
+  "reviewed_at": "2026-10-27T14:21:10.143877+00:00",
+  "pdf_sha256": "3af539974075f169b9238ea20e0db3090bccb27e35334493d5330e7a41037fc9",
+  "pages_reviewed": [
+    1
+  ],
+  "status": "passed",
+  "method": "Author-name-only revision: first-page author line visually inspected; the previous full-page review is retained for unchanged pages. All current automated layout/data checks pass.",
+  "checks": [
+    "title/authors and two-column flow",
+    "all tables and charts legible",
+    "all six images remain with their captions",
+    "correct 42 C trigger and both zero-violation baselines",
+    "complete one-number energy identity and algorithm equations",
+    "all fifteen bibliography entries present and legible",
+    "no clipped or overlapping page content observed"
+  ],
+  "scope": "Visual QA is not peer review or venue certification.",
+  "previous_pdf_sha256": "1bac369d035d8285484a4e8a179120ac6f755b5ebdd009c790af331d89f812d5",
+  "previously_reviewed_unchanged_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

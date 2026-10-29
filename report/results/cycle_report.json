@@ -1,0 +1,30 @@
+[
+  {
+    "cycle": "udds",
+    "duration_s": 1369.0,
+    "distance_km": 11.990238655999999,
+    "kwh_per_100km": 13.25519464167674,
+    "provenance": "real"
+  },
+  {
+    "cycle": "hwfet",
+    "duration_s": 765.0,
+    "distance_km": 16.506549664,
+    "kwh_per_100km": 13.302039037084562,
+    "provenance": "real"
+  },
+  {
+    "cycle": "us06",
+    "duration_s": 600.0,
+    "distance_km": 12.887582048,
+    "kwh_per_100km": 18.73860389156666,
+    "provenance": "real"
+  },
+  {
+    "cycle": "nedc",
+    "duration_s": 1180.0,
+    "distance_km": 10.931388888780003,
+    "kwh_per_100km": 13.987814217041864,
+    "provenance": "real"
+  }
+]

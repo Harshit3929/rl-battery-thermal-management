@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-27T14:19:55.595234+00:00",
+  "pdf": "D:\\Coding\\RL BATTERY SYSTEM\\output\\pdf\\IEEE_BTMS_Research_Paper_Formatted.pdf",
+  "pages": 9,
+  "all_checks_pass": true,
+  "checks": [
+    {
+      "name": "All figures, tables and equations present exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every printed table row matches recorded-data or declared-parameter source",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Citations resolve and bibliography follows first appearance",
+      "passed": true,
+      "detail": "{'first_citations': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'bibliography': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}"
+    },
+    {
+      "name": "Four recent primary-source references retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Identified stale claims removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Complete energy identity has one equation number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exact grade formula and terminal target indicator present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No inherited replacement glyphs or encoding artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All text stays within review margins",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "All pages have content",
+      "passed": true,
+      "detail": "9 pages"
+    },
+    {
+      "name": "Every chart stays with its caption in the same page and column",
+      "passed": true,
+      "detail": "[{'figure': 1, 'passed': True, 'image': [(3, (50.0, 47.99998474121094, 295.0, 194.99998474121094))], 'captions': [(3, (50.0, 203.89901733398438, 70.62161254882812, 211.89901733398438))]}, {'figure': 2, 'passed': True, 'image': [(3, (315.0, 48.0, 560.0, 482.3182067871094))], 'captions': [(3, (315.0, 491.2172546386719, 335.6719970703125, 499.2172546386719))]}, {'figure': 3, 'passed': True, 'image': [(3, (315.0, 528.7181396484375, 560.0, 680.787109375))], 'captions': [(3, (315.0, 689.6861572265625, 335.6719970703125, 697.6861572265625))]}, {'figure': 4, 'passed': True, 'image': [(4, (50.0, 341.4000244140625, 295.0, 493.4690246582031))], 'captions': [(4, (50.0, 502.3680725097656, 70.6719970703125, 510.3680725097656))]}, {'figure': 5, 'passed': True, 'image': [(4, (50.0, 539.8689575195312, 295.0, 686.8689575195312))], 'captions': [(4, (50.0, 695.7680053710938, 70.6719970703125, 703.7680053710938))]}, {'figure': 6, 'passed': True, 'image': [(4, (315.0, 381.6999816894531, 560.0, 533.7689819335938))], 'captions': [(4, (315.0, 542.6680297851562, 335.6719970703125, 550.6680297851562))]}]"
+    },
+    {
+      "name": "Built source/data/figure identities remain intact",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Episode-derived manuscript tables and retained evidence remain consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "External submission requirements are disclosed",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Programmatic checks; rendered pages require separate visual inspection.",
+  "remaining": [
+    "No target venue or evaluator-facing public links supplied.",
+    "TeX source emitted and statically checked; no installed TeX engine was available for compilation."
+  ]
+}

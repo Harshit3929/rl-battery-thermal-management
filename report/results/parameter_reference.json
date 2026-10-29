@@ -1,0 +1,48 @@
+{
+  "reference": "Chen et al. 2020, DOI 10.1149/1945-7111/ab9050; PyBaMM SPMe",
+  "pybamm_version": "26.8.0.0",
+  "pulse": "5 A discharge for 60 s at 25 C",
+  "pack_topology": "96s34p, 5 Ah cells",
+  "rows": [
+    {
+      "soc": 0.15,
+      "reference_ocv_v": 3.433894659216091,
+      "model_ocv_v": 3.3905479197361132,
+      "reference_r0_cell_ohm": 0.02705226339801552,
+      "reference_r60_cell_ohm": 0.04481706805045853,
+      "model_r0_cell_ohm": 0.02727693156640441,
+      "model_r60_cell_ohm": 0.04055607080719178
+    },
+    {
+      "soc": 0.3,
+      "reference_ocv_v": 3.5814459862576538,
+      "model_ocv_v": 3.576097715863709,
+      "reference_r0_cell_ohm": 0.02468694050389102,
+      "reference_r60_cell_ohm": 0.03647148926233594,
+      "model_r0_cell_ohm": 0.024989839227550586,
+      "model_r60_cell_ohm": 0.03826897846833796
+    },
+    {
+      "soc": 0.7,
+      "reference_ocv_v": 3.947906398611176,
+      "model_ocv_v": 3.941328334828851,
+      "reference_r0_cell_ohm": 0.024049640948663777,
+      "reference_r60_cell_ohm": 0.03718690061689793,
+      "model_r0_cell_ohm": 0.02426666954523542,
+      "model_r60_cell_ohm": 0.037545808786022795
+    },
+    {
+      "soc": 0.9,
+      "reference_ocv_v": 4.096656214351242,
+      "model_ocv_v": 4.096395236088917,
+      "reference_r0_cell_ohm": 0.026347598005219998,
+      "reference_r60_cell_ohm": 0.03497763860183323,
+      "model_r0_cell_ohm": 0.02665672228291216,
+      "model_r60_cell_ohm": 0.03993586152369954
+    }
+  ],
+  "reference_cell_heat_capacity_j_k": 42.77529812749004,
+  "reference_cell_only_pack_heat_capacity_j_k": 139618.5730881275,
+  "model_pack_heat_capacity_j_k": 240000.0,
+  "note": "Pack includes enclosure/cold plates; conductances and hardware mass are engineering assumptions. This is a reduced-model cross-check, not experimental pack validation."
+}

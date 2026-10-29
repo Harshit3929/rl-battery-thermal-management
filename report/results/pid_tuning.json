@@ -1,0 +1,174 @@
+{
+  "best_parameters": {
+    "setpoint": 39.0,
+    "kp": 0.6,
+    "ki": 0.0,
+    "kd": 0.0
+  },
+  "objective": "same time-integrated cost as RL; shield enabled for all tuning trials",
+  "split": "tuning; held-out episodes excluded",
+  "trials": [
+    {
+      "parameters": {
+        "setpoint": 30.0,
+        "kp": 0.1,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1807.6688001410268
+    },
+    {
+      "parameters": {
+        "setpoint": 30.0,
+        "kp": 0.1,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1909.707132875366
+    },
+    {
+      "parameters": {
+        "setpoint": 30.0,
+        "kp": 0.3,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1836.8213795510094
+    },
+    {
+      "parameters": {
+        "setpoint": 30.0,
+        "kp": 0.3,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1889.400710971701
+    },
+    {
+      "parameters": {
+        "setpoint": 30.0,
+        "kp": 0.6,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1863.550418565811
+    },
+    {
+      "parameters": {
+        "setpoint": 30.0,
+        "kp": 0.6,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1879.8872946665585
+    },
+    {
+      "parameters": {
+        "setpoint": 35.0,
+        "kp": 0.1,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1696.3801945971534
+    },
+    {
+      "parameters": {
+        "setpoint": 35.0,
+        "kp": 0.1,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1732.6089621335332
+    },
+    {
+      "parameters": {
+        "setpoint": 35.0,
+        "kp": 0.3,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1693.6805061490932
+    },
+    {
+      "parameters": {
+        "setpoint": 35.0,
+        "kp": 0.3,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1712.8299579758325
+    },
+    {
+      "parameters": {
+        "setpoint": 35.0,
+        "kp": 0.6,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1697.4429728639068
+    },
+    {
+      "parameters": {
+        "setpoint": 35.0,
+        "kp": 0.6,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1709.2792849477153
+    },
+    {
+      "parameters": {
+        "setpoint": 39.0,
+        "kp": 0.1,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1645.5817752257642
+    },
+    {
+      "parameters": {
+        "setpoint": 39.0,
+        "kp": 0.1,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1669.214290517831
+    },
+    {
+      "parameters": {
+        "setpoint": 39.0,
+        "kp": 0.3,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1643.8999288493826
+    },
+    {
+      "parameters": {
+        "setpoint": 39.0,
+        "kp": 0.3,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1648.3988870021221
+    },
+    {
+      "parameters": {
+        "setpoint": 39.0,
+        "kp": 0.6,
+        "ki": 0.0,
+        "kd": 0.0
+      },
+      "mean_cost": 1640.7015129862423
+    },
+    {
+      "parameters": {
+        "setpoint": 39.0,
+        "kp": 0.6,
+        "ki": 0.002,
+        "kd": 0.0
+      },
+      "mean_cost": 1650.175870003913
+    }
+  ]
+}

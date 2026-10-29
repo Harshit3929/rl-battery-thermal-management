@@ -1,0 +1,6 @@
+name: ppo
+learning_rate: 0.0003
+batch_size: 256
+n_steps: 256
+n_epochs: 10
+net_arch: [64, 64]

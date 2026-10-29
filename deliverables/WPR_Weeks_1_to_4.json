@@ -1,0 +1,88 @@
+{
+  "institution": "IILM UNIVERSITY, GREATER NOIDA",
+  "school": "SCHOOL OF COMPUTER SCIENCE & ENGINEERING",
+  "semester": "Even semester 2026-2027",
+  "project_id": "26P_3CSE389",
+  "project_title": "Reinforcement Learning-Based Dynamic Battery Thermal Management for Software Defined Electric Vehicles",
+  "student": "Harshit Singh Parmar",
+  "guide": "Dr. Pranav Srivastava",
+  "allocation_status": "Retrospective milestone grouping; reporting dates and weekly allocation require confirmation.",
+  "weeks": [
+    {
+      "number": 1,
+      "reporting_date": null,
+      "completed": [
+        "Reviewed the battery thermal-management problem and the trade-off between temperature safety, spatial uniformity and auxiliary cooling energy.",
+        "Reviewed reinforcement-learning thermal-control literature and conventional PID and model-predictive control approaches for the project scope.",
+        "Specified a simulation-based design using a four-node battery pack, an electrical equivalent-circuit model and a finite coolant inventory.",
+        "Identified pump, fan and chiller as three independent continuous control inputs; selected PPO, SAC and TD3 for comparison.",
+        "Identified official EPA-hosted UDDS, HWFET, US06, ECE and EUDC speed traces and the ECE/EUDC assembly required for NEDC.",
+        "Prepared the implementation and evaluation workflow, covering model checks, fair baseline tuning, multi-seed training and separate raw/supervised evaluation."
+      ],
+      "challenges": [
+        "Selecting a useful model fidelity while clearly distinguishing engineering assumptions from measured battery parameters.",
+        "Defining a common objective and evaluation protocol so controller comparisons remain fair and reproducible.",
+        "Keeping simulation, computational feasibility and physical validation claims distinct."
+      ],
+      "next_plan": "Implement the coupled vehicle, battery and cooling models; prepare real driving inputs and verify limiting-case behaviour before controller training.",
+      "evidence": ["PLAN.md", "docs/ARCHITECTURE.md", "deliverables/IEEE_BTMS_Manuscript.json"]
+    },
+    {
+      "number": 2,
+      "reporting_date": null,
+      "completed": [
+        "Set up the local CPU Python workflow using NumPy, Gymnasium, PyTorch, Stable-Baselines3 and plotting utilities.",
+        "Implemented the longitudinal vehicle-demand model and first-order battery equivalent circuit, including state of charge, polarization dynamics and electrical heat generation.",
+        "Developed four thermal nodes with neighbour conduction, ambient exchange and serial coolant warming; coupled them to a finite coolant reservoir.",
+        "Implemented separate pump, radiator-fan and chiller commands, including their electrical energy requirements and pump-off circulation behaviour.",
+        "Loaded the retained official driving traces, assembled NEDC from ECE and EUDC, and preserved source units and file hashes for provenance.",
+        "Checked heat balance, cooling response, charging/discharging signs, equilibrium and normalizer behaviour using the plant test cases."
+      ],
+      "challenges": [
+        "Converting speed traces into modeled battery power/current while accounting for drivetrain efficiency, accessories and bounded regeneration.",
+        "Maintaining consistent electrical and thermal energy accounting, particularly polarization-capacitor storage and finite coolant capacity.",
+        "Documenting thermal and cooling assumptions without presenting them as physical-pack measurements."
+      ],
+      "next_plan": "Build the Gymnasium control environment, implement the shared cost and safety supervisor, and establish conventional baseline performance.",
+      "evidence": ["btms/plant/", "tests/test_plant.py", "data/cycles/", "report/results/cycle_report.json"]
+    },
+    {
+      "number": 3,
+      "reporting_date": null,
+      "completed": [
+        "Built the custom Gymnasium environment with reset, step and termination logic, using 1-second plant updates and 5-second controller decisions.",
+        "Defined twelve observation values, including four module temperatures, state of charge, C-rate, ambient/coolant conditions, demand and preview summaries.",
+        "Implemented three bounded actuator commands and a common cost covering temperature-band exceedance, spatial spread, cooling electricity and relative aging exposure.",
+        "Added a heuristic full-cooling supervisor at 42 C and kept raw controller requests distinct from the commands actually applied.",
+        "Implemented null, bang-bang, PID and sampling-MPC baselines; tuned PID on a separate tuning split, selecting 39 C, Kp=0.6 and Ki=Kd=0.",
+        "Confirmed the no-cooling hardness gate and fixed the eight evaluation episodes for separate supervisor-enabled and supervisor-disabled comparisons."
+      ],
+      "challenges": [
+        "Making cooling necessary in demanding cases while retaining a mild scenario that is safe without cooling.",
+        "Normalizing observations and balancing reward terms without hiding unsafe raw-policy behaviour behind the supervisor.",
+        "Accounting for MPC's access to the nominal simulator state and future demand when interpreting comparisons."
+      ],
+      "next_plan": "Train PPO, SAC and TD3 across five seeds, evaluate every controller on the fixed manifest, and retain checkpoints, logs and per-episode metrics.",
+      "evidence": ["btms/envs/btms_env.py", "btms/envs/shield.py", "report/results/hardness_gate.json", "report/results/pid_tuning.json", "data/evaluation_episodes.json"]
+    },
+    {
+      "number": 4,
+      "reporting_date": null,
+      "completed": [
+        "Completed five saved training runs each for PPO, SAC and TD3: SAC/TD3 reached 20,000 steps per seed and PPO reached its 20,480-step rollout boundary.",
+        "Evaluated saved policies and baselines on the same eight episodes, recording costs, cooling energy, temperature violations and supervisor interventions separately.",
+        "Documented the measured limitation: the present learned policies do not beat tuned PID on mean supervised cost and violate the band when supervision is disabled.",
+        "Verified fifteen Python tests and reproduced 288 saved non-MPC evaluation outcomes; a separate MPC HWFET spot-check also matched its recorded result.",
+        "Completed the recorded laptop-CPU policy-export benchmark and built a working dashboard for fresh Python simulations, comparisons and inspectable evidence downloads.",
+        "Prepared the corrected research manuscript, figures and fifteen-reference bibliography, including four verified 2025-2026 studies; checked its nine-page PDF and synchronized source."
+      ],
+      "challenges": [
+        "Improving intrinsic learned-policy safety and cost performance beyond the current short training budget and tuned PID baseline.",
+        "Distinguishing simulated outcomes and laptop inference timings from physical battery validation or automotive-ECU certification.",
+        "Finalizing venue requirements and evaluator-accessible repository/data/demo links, which remain undecided."
+      ],
+      "next_plan": "Investigate longer training and robustness checks, refine controller/reward settings, finalize sharing and submission details, and prepare the live simulation demonstration.",
+      "evidence": ["outputs/study_20000/", "report/results/controller_comparison.csv", "report/dashboard/test_report.json", "report/dashboard/reproduction.json", "report/dashboard/mpc_spotcheck.json", "report/paper_revision/validation.json"]
+    }
+  ]
+}

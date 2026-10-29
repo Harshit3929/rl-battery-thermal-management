@@ -1,0 +1,22 @@
+defaults:
+  - agent: sac
+  - scenario: mixed
+  - _self_
+seed: 0
+device: cpu
+total_steps: 100000
+n_envs: 8
+eval_interval: 10000
+checkpoint_interval: 10000
+resume_from: null
+preview: true
+shield: true
+log:
+  backend: tensorboard
+  dir: outputs
+  run_name: ${agent.name}_${scenario.name}_seed${seed}
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: ${log.dir}/${log.run_name}/${now:%Y-%m-%d_%H-%M-%S-%f}

@@ -1,0 +1,149 @@
+{
+  "hardness_passed": true,
+  "runs": [
+    {
+      "scenario": "mild",
+      "shield": false,
+      "action": [
+        0,
+        0,
+        0
+      ],
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "aux_wh": 0.0,
+      "cost": 365.298453968869,
+      "max_temperature_c": 30.013616701555197,
+      "spatial_delta_c": 0.0,
+      "energy_residual_j": 1.7053025658242404e-13,
+      "duration_s": 1365,
+      "termination_reason": "",
+      "cycle_provenance": {
+        "source_url": "https://www.epa.gov/sites/default/files/2015-10/uddscol.txt",
+        "source_units": "mph",
+        "source_sha256": "cc9f3edf2f0626976a6552d9f5c88867e1805ed3f321df9ec943a3e0353687b6",
+        "provenance": "real",
+        "csv_sha256": "a6b9027ae45959f4df702b8987500b5c999f0862e64b56eab715d7e31cac8fdc"
+      }
+    },
+    {
+      "scenario": "mild",
+      "shield": false,
+      "action": [
+        1,
+        1,
+        1
+      ],
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "aux_wh": 625.2878418310274,
+      "cost": 1256.030313749399,
+      "max_temperature_c": 29.999729034165707,
+      "spatial_delta_c": 1.5927415421496782,
+      "energy_residual_j": 2.8626345738302916e-10,
+      "duration_s": 1365,
+      "termination_reason": "",
+      "cycle_provenance": {
+        "source_url": "https://www.epa.gov/sites/default/files/2015-10/uddscol.txt",
+        "source_units": "mph",
+        "source_sha256": "cc9f3edf2f0626976a6552d9f5c88867e1805ed3f321df9ec943a3e0353687b6",
+        "provenance": "real",
+        "csv_sha256": "a6b9027ae45959f4df702b8987500b5c999f0862e64b56eab715d7e31cac8fdc"
+      }
+    },
+    {
+      "scenario": "hot",
+      "shield": false,
+      "action": [
+        0,
+        0,
+        0
+      ],
+      "violation_seconds": 1472,
+      "shield_seconds": 0,
+      "aux_wh": 0.0,
+      "cost": 27534.937790467626,
+      "max_temperature_c": 53.009257261201014,
+      "spatial_delta_c": 0.0,
+      "energy_residual_j": 8.981260180007666e-11,
+      "duration_s": 1800,
+      "termination_reason": "",
+      "cycle_provenance": {
+        "source_url": "https://www.epa.gov/system/files/other-files/2025-03/us06col.txt",
+        "source_units": "mph",
+        "source_sha256": "84e9d8cc16fcd4ee3c30c3880f333eb25b61352e56f24e453411a7245c725ad2",
+        "provenance": "real",
+        "csv_sha256": "cc06dab7195906fe2ddf7712af149bb3cfa13433f09f22e0568a85b2cfec1b85"
+      }
+    },
+    {
+      "scenario": "hot",
+      "shield": false,
+      "action": [
+        1,
+        1,
+        1
+      ],
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "aux_wh": 1421.3749581346733,
+      "cost": 3050.6099110216483,
+      "max_temperature_c": 43.00004880654954,
+      "spatial_delta_c": 3.164843518381904,
+      "energy_residual_j": 7.239577826112509e-10,
+      "duration_s": 1800,
+      "termination_reason": "",
+      "cycle_provenance": {
+        "source_url": "https://www.epa.gov/system/files/other-files/2025-03/us06col.txt",
+        "source_units": "mph",
+        "source_sha256": "84e9d8cc16fcd4ee3c30c3880f333eb25b61352e56f24e453411a7245c725ad2",
+        "provenance": "real",
+        "csv_sha256": "cc06dab7195906fe2ddf7712af149bb3cfa13433f09f22e0568a85b2cfec1b85"
+      }
+    },
+    {
+      "scenario": "fastcharge",
+      "shield": false,
+      "action": [
+        0,
+        0,
+        0
+      ],
+      "violation_seconds": 1181,
+      "shield_seconds": 0,
+      "aux_wh": 0.0,
+      "cost": 549577.8756678352,
+      "max_temperature_c": 81.00601086424697,
+      "spatial_delta_c": 0.0,
+      "energy_residual_j": 4.469029590836726e-10,
+      "duration_s": 1350,
+      "termination_reason": "",
+      "cycle_provenance": {
+        "provenance": "specified_charge_protocol",
+        "c_rate": 2.0
+      }
+    },
+    {
+      "scenario": "fastcharge",
+      "shield": false,
+      "action": [
+        1,
+        1,
+        1
+      ],
+      "violation_seconds": 0,
+      "shield_seconds": 0,
+      "aux_wh": 1837.5602172666852,
+      "cost": 4209.6334118819605,
+      "max_temperature_c": 38.57490288090039,
+      "spatial_delta_c": 4.255217638133498,
+      "energy_residual_j": 9.940777090378106e-10,
+      "duration_s": 1350,
+      "termination_reason": "",
+      "cycle_provenance": {
+        "provenance": "specified_charge_protocol",
+        "c_rate": 2.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "provenance": "real",
+  "assembly": "ECE x4 + EUDC x1; shared endpoints omitted",
+  "sources": [
+    {
+      "source_url": "https://www.epa.gov/sites/default/files/2015-10/ececol.txt",
+      "source_units": "kph",
+      "source_sha256": "4c04507a838e4774694daa7f03811a861ab361d2267acee3c31677f4668a2e8f",
+      "provenance": "real"
+    },
+    {
+      "source_url": "https://www.epa.gov/sites/default/files/2015-10/eudccol.txt",
+      "source_units": "kph",
+      "source_sha256": "dc557fbfcebeb33889822864bd2937377ffea2295270c5485de5729488bec43a",
+      "provenance": "real"
+    }
+  ],
+  "csv_sha256": "49eb7769505b3ea7b64e6f5c780e75fe238b9742bee1397076a1de0ea470b118"
+}

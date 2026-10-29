@@ -1,0 +1,34 @@
+[
+  {
+    "file": "sac_hot_s701_shielded.json",
+    "label": "SAC \u00b7 hot_s701 \u00b7 shielded"
+  },
+  {
+    "file": "sac_hot_s701_raw.json",
+    "label": "SAC \u00b7 hot_s701 \u00b7 raw"
+  },
+  {
+    "file": "sac_fastcharge_s701_shielded.json",
+    "label": "SAC \u00b7 fastcharge_s701 \u00b7 shielded"
+  },
+  {
+    "file": "sac_fastcharge_s701_raw.json",
+    "label": "SAC \u00b7 fastcharge_s701 \u00b7 raw"
+  },
+  {
+    "file": "pid_hot_s701_shielded.json",
+    "label": "PID \u00b7 hot_s701 \u00b7 shielded"
+  },
+  {
+    "file": "pid_hot_s701_raw.json",
+    "label": "PID \u00b7 hot_s701 \u00b7 raw"
+  },
+  {
+    "file": "pid_fastcharge_s701_shielded.json",
+    "label": "PID \u00b7 fastcharge_s701 \u00b7 shielded"
+  },
+  {
+    "file": "pid_fastcharge_s701_raw.json",
+    "label": "PID \u00b7 fastcharge_s701 \u00b7 raw"
+  }
+]

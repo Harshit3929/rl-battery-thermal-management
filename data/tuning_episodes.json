@@ -1,0 +1,31 @@
+[
+  {
+    "id": "tune_mild",
+    "scenario": "mild",
+    "seed": 101,
+    "episode": {}
+  },
+  {
+    "id": "tune_hot",
+    "scenario": "hot",
+    "seed": 101,
+    "episode": {}
+  },
+  {
+    "id": "tune_fastcharge",
+    "scenario": "fastcharge",
+    "seed": 101,
+    "episode": {}
+  },
+  {
+    "id": "tune_hwfet",
+    "scenario": "mild",
+    "seed": 102,
+    "episode": {
+      "cycle": "hwfet",
+      "ambient_c": 30.0,
+      "temperature_c": 32.0,
+      "duration_s": 765
+    }
+  }
+]

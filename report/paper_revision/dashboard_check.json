@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-27T14:21:17.912Z",
+  "status": "passed",
+  "checks": [
+    "corrected paper card visible",
+    "9 pages and 15 actual references",
+    "four recent references counted from registry",
+    "PDF download matches verified build SHA-256",
+    "no JavaScript errors"
+  ]
+}

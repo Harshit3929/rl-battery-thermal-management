@@ -1,0 +1,4 @@
+# Install after the project's requirements.txt to rebuild and inspect the paper.
+reportlab
+PyMuPDF
+Pillow

@@ -1,0 +1,42 @@
+{
+  "completed_at": "2026-10-27T09:59:28.984820+00:00",
+  "command": "D:\\Coding\\RL BATTERY SYSTEM\\.venv\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider tests/test_plant.py tests/test_env.py tests/test_dashboard.py",
+  "returncode": 0,
+  "output": "...............                                                          [100%]\n============================== warnings summary ===============================\ntests/test_env.py::test_gym_contract\n  D:\\Coding\\RL BATTERY SYSTEM\\.venv\\Lib\\site-packages\\gymnasium\\utils\\env_checker.py:317: UserWarning: \u001b[33mWARN: A Box observation space minimum value is -infinity. This is probably too low.\u001b[0m\n    logger.warn(\n\ntests/test_env.py::test_gym_contract\n  D:\\Coding\\RL BATTERY SYSTEM\\.venv\\Lib\\site-packages\\gymnasium\\utils\\env_checker.py:321: UserWarning: \u001b[33mWARN: A Box observation space maximum value is infinity. This is probably too high.\u001b[0m\n    logger.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n15 passed, 2 warnings in 43.29s\n",
+  "test_source_sha256": {
+    "tests/test_plant.py": "29c6522f05864b913f3d3ee59c2b3b04e6c766e8f2525d14f2fb2e8aa0e7bb03",
+    "tests/test_env.py": "9a88fd7a371cdde3598ce3a294d7d67d59a53ea4b849de9d7730cadd1c157a22",
+    "tests/test_dashboard.py": "64fe42c68c38d8378a19e32951ad54fc0f3e8d1aca79c7836d400542af159219"
+  },
+  "implementation_source_sha256": {
+    "btms/envs/btms_env.py": "1e1f5493afd1a23bda82fe1fa8da5659efd5b513f943188901574067a96813df",
+    "btms/envs/shield.py": "ed10642bea5ca09ce88e5651d61262fac4ac1e49a8f73f9a62e3ee52b0729ca5",
+    "btms/dashboard/simulation.py": "9eb824332ec0d930ebdec5f4b0d01f1f24dd43d104dc6d0451d6aa4b2abd52dd",
+    "btms/analysis/evaluate.py": "82e3c2098b7c18427d4f06c5463450a0ba2f9079a1ae4481c59789d063b9848f",
+    "btms/agents/sb3_train.py": "846998f9cc88cef5bf9279cd55a45537b8d511dc742439da84e3378c6a908fe3",
+    "btms/utils/normalizer.py": "fa16b49cee39145093aa555f4008621b1c5f44c0e026460a7c9e8ef620e7fd9c",
+    "data/evaluation_episodes.json": "5e85f3b243900736c3db4c98046ae608005f445a05280d4c310dc15719d5527f",
+    "report/results/pid_tuning.json": "210ee7317b2119bbf195fbcacddca732e359cb5a8ba1cf4226c9347f625688f1",
+    "btms/plant/aging.py": "8470fcb6e5f386f86cadf102d18ae9e0e4a881bf91f16d5f4f41066e528c4670",
+    "btms/plant/battery_electrical.py": "6b6e08f86eecdd945a5234c896cbab1e61d1d4a10388f3e1c9561d94772dff8e",
+    "btms/plant/battery_thermal.py": "7d900654e80d57d8df98ec67cb9373de917e231a2841c8a8ade16164cf4a6416",
+    "btms/plant/cooling.py": "b73b731c8a462ce63aa5083dcbb6e385e897a64b497db0b806f10366da063e95",
+    "btms/plant/drive_cycles.py": "22b3ad8f657c0e7e4963496f038f0359c843897a9ceb65f1795bac2d1f854bae",
+    "btms/plant/pack.py": "5ab613187f2aef3d29bdee52528b06d60d9eb29a79cafb4a3e7ad50af56c4a3c",
+    "btms/plant/vehicle.py": "84d4922e5a97a3bc834c85aab44fa015e4bf8854648e141aba54d231c9586216",
+    "btms/plant/__init__.py": "05fa552179bf4ba6f063ee46aad688fcc5973e3cf4f4bd61e9ff71a506c88b49",
+    "btms/controllers/bangbang.py": "5ffefec8f5627121e7117e44dcb0b99e68c23eae42bd92cf45966501a3ee01d6",
+    "btms/controllers/base.py": "eed0049266621eee6a3e9528f69b55ad58a868465b119b8d04d03654f02a53a5",
+    "btms/controllers/mpc.py": "92e108eecafa5beab8725041e77b6c88df7a1174218f05b5cccea2aae18cd364",
+    "btms/controllers/null.py": "b469c127402f3dd11dd9493a42132dee20599fa74287174e76c3a75250299e22",
+    "btms/controllers/pid.py": "ecc2890e8bc490bbebef721f25105bdb0ba192bc5885b5158e5d825aa573118d",
+    "btms/controllers/tuning.py": "aaf77515ca3e66424c2f065e6c70eed2be5583fe947006658b95501451d41e96",
+    "btms/controllers/__init__.py": "6899e4611cec20ca6024401d199c93022a7b878798d0456565b06c7620cc8376",
+    "btms/dashboard/evidence.py": "a258983e4b97bc2f3c4144bfd58c2a571bf70d5b92377bdfe992f81f2df93491",
+    "btms/dashboard/export.py": "03db16f76139bfb163ef69c7117b2529481ff96e84a31a5e2203277bd2a10faa",
+    "btms/dashboard/server.py": "301033e9226b95e9e5bff55db134aefe8ccf99a39b5d1fa1f13409d162d9e1ae",
+    "btms/dashboard/verify.py": "82641de52dc9f769fa262e303112fc8115cb7aa0c4fe701f465ec00f8a6e43fc",
+    "btms/dashboard/__init__.py": "93719ba651fb5fafeede23db770b91d3d8fa22ae37a0b645d28f0cee264de8c5",
+    "btms/dashboard/__main__.py": "ddd60a1df996b2b744c45953165711e5afe2711f5f0249f4e98875e1342411df"
+  }
+}

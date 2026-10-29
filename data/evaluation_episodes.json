@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mild_s701",
+    "scenario": "mild",
+    "seed": 701,
+    "episode": {
+      "temperature_c": 30.422813640692624,
+      "soc": 0.8181598273637163
+    }
+  },
+  {
+    "id": "mild_s702",
+    "scenario": "mild",
+    "seed": 702,
+    "episode": {
+      "temperature_c": 29.621715556626103,
+      "soc": 0.7876587156747858
+    }
+  },
+  {
+    "id": "hot_s701",
+    "scenario": "hot",
+    "seed": 701,
+    "episode": {
+      "temperature_c": 43.422813640692624,
+      "soc": 0.8181598273637163
+    }
+  },
+  {
+    "id": "hot_s702",
+    "scenario": "hot",
+    "seed": 702,
+    "episode": {
+      "temperature_c": 42.6217155566261,
+      "soc": 0.7876587156747858
+    }
+  },
+  {
+    "id": "fastcharge_s701",
+    "scenario": "fastcharge",
+    "seed": 701,
+    "episode": {
+      "temperature_c": 38.422813640692624,
+      "soc": 0.16815982736371626
+    }
+  },
+  {
+    "id": "fastcharge_s702",
+    "scenario": "fastcharge",
+    "seed": 702,
+    "episode": {
+      "temperature_c": 37.6217155566261,
+      "soc": 0.13765871567478583
+    }
+  },
+  {
+    "id": "heldout_nedc",
+    "scenario": "hot",
+    "seed": 703,
+    "episode": {
+      "cycle": "nedc",
+      "ambient_c": 45.0,
+      "temperature_c": 43.0,
+      "grade": 0.02,
+      "duration_s": 1180
+    }
+  },
+  {
+    "id": "evaluation_hwfet",
+    "scenario": "mild",
+    "seed": 704,
+    "episode": {
+      "cycle": "hwfet",
+      "ambient_c": 30.0,
+      "temperature_c": 32.0,
+      "duration_s": 765
+    }
+  }
+]

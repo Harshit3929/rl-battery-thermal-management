@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspectable battery thermal control simulations, training artifacts, and research evidence.">
+  <title>RL Battery Lab · Research Console</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#simulation"><span class="brand-icon">▥</span><span>BATTERY<span class="brand-light"> / LAB</span><small>THERMAL CONTROL RESEARCH</small></span></a>
+    <div class="nav-label">WORKSPACE</div>
+    <nav aria-label="Dashboard sections">
+      <button class="nav active" data-view="simulation"><span>◈</span>Simulation lab<span class="nav-index">01</span></button>
+      <button class="nav" data-view="results"><span>▤</span>Study results<span class="nav-index">02</span></button>
+      <button class="nav" data-view="training"><span>⌁</span>Training records<span class="nav-index">03</span></button>
+      <button class="nav" data-view="evidence"><span>◎</span>Evidence & paper<span class="nav-index">04</span></button>
+    </nav>
+    <div class="side-note"><span class="eyebrow">MODEL, NOT HARDWARE</span><p>Four thermal nodes.<br>Three cooling actuators.<br>One inspectable control loop.</p><span class="pill neutral">SIMULATION STUDY</span></div>
+    <div class="side-bottom"><span class="status-dot"></span><span id="backend-label">Connecting to Python…</span><small>IILM · B.Tech major project</small></div>
+  </aside>
+  <main>
+    <header class="topbar"><span>RESEARCH CONSOLE <span class="slash">/</span> <span id="breadcrumb">SIMULATION LAB</span></span><span class="top-tag">RL–BTMS <span class="version">v1.0</span></span></header>
+    <div class="content">
+      <div id="fatal" class="notice error" hidden role="alert"></div>
+      <div id="snapshot-notice" class="notice" hidden>Published evidence snapshot. Fresh simulations require the local Python server; recorded results and exported rollouts remain inspectable.</div>
+      <section class="view" id="simulation">
+        <div class="page-head"><div><div class="eyebrow">01 / CONTROL IN ACTION</div><h1>Simulation lab<span class="teal">.</span></h1><p>See how a controller manages battery heat, one decision at a time.</p></div><span class="pill" id="engine-badge"><span class="status-dot"></span>PYTHON PHYSICS ENGINE</span></div>
+        <div class="notice slim"><strong>Evidence boundary</strong><span>Driving speed inputs come from retained EPA traces. Temperatures, energy, and controller actions are calculated by the assumed battery model. No physical battery measurements.</span></div>
+        <div class="lab-grid">
+          <div class="panel settings">
+            <div class="panel-title"><h2>Configure a run</h2><span class="mono muted">5 s / decision</span></div>
+            <label for="episode">EVALUATION EPISODE</label><select id="episode"></select>
+            <p id="episode-detail" class="field-note"></p>
+            <label for="controller">PRIMARY CONTROLLER</label><select id="controller"><option value="sac">SAC · saved policy</option><option value="pid">PID · tuned baseline</option><option value="ppo">PPO · saved policy</option><option value="td3">TD3 · saved policy</option><option value="null">No cooling · null</option><option value="bangbang">Bang-bang</option><option value="mpc">Sampling MPC · slower</option></select>
+            <div class="two-fields"><div><label for="training-seed">TRAINING SEED</label><select id="training-seed"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div><div><label for="compare">COMPARE WITH</label><select id="compare"><option value="pid">Tuned PID</option><option value="">None</option><option value="sac">SAC</option><option value="null">No cooling</option><option value="bangbang">Bang-bang</option><option value="ppo">PPO</option><option value="td3">TD3</option></select></div></div>
+            <div class="shield-control"><div><strong>Safety supervisor</strong><small>Full cooling at ≥42°C</small></div><label class="switch"><input type="checkbox" id="shield" checked aria-label="Enable safety supervisor"><span></span></label></div>
+            <button class="primary" id="run">Run fresh simulation <span>↗</span></button>
+            <p class="field-note">Runs the existing simulator and saved actor. No training, generated sample data, or changes to the original study results.</p>
+            <div class="saved-replays" id="saved-replays" hidden></div>
+          </div>
+          <div class="panel monitor">
+            <div class="panel-title"><div><h2>Battery thermal state</h2><span class="muted small" id="run-caption">Choose an episode, then run the model.</span></div><span class="pill neutral" id="run-mode">AWAITING RUN</span></div>
+            <div class="pack-area"><div class="pack-lead"></div><div class="battery-pack" id="battery-pack"><div class="battery-node"><span>MODULE 01</span><strong>—<small>°C</small></strong><div class="node-line"></div></div><div class="battery-node"><span>MODULE 02</span><strong>—<small>°C</small></strong><div class="node-line"></div></div><div class="battery-node"><span>MODULE 03</span><strong>—<small>°C</small></strong><div class="node-line"></div></div><div class="battery-node"><span>MODULE 04</span><strong>—<small>°C</small></strong><div class="node-line"></div></div></div><div class="pack-terminal"></div></div>
+            <div class="coolant-line"><span>↳ SERIAL COOLANT LOOP</span><span id="coolant">— °C</span></div>
+            <div class="run-stats"><div><span>SIMULATED TIME</span><strong id="time-value">—<small> s</small></strong></div><div><span>STATE OF CHARGE</span><strong id="soc-value">—<small> %</small></strong></div><div><span>COOLING ENERGY</span><strong id="energy-value">—<small> Wh</small></strong></div><div><span>BAND VIOLATIONS</span><strong id="violation-value">—<small> s</small></strong></div></div>
+            <div class="actuator-head"><span class="eyebrow">APPLIED ACTUATOR COMMANDS</span><span id="intervention" class="small muted">No run data</span></div>
+            <div class="actuators" id="actuators"></div>
+          </div>
+        </div>
+        <div id="run-status" class="notice slim" role="status">Ready. All controls use the same battery model and objective.</div>
+        <div class="panel chart-panel"><div class="panel-title"><div><h2>Temperature over time</h2><span class="small muted">Primary controller: four modules · comparison: maximum module temperature</span></div><div class="chart-key"><span><i class="key teal-bg"></i>Modules</span><span><i class="key orange-bg"></i>Comparison max</span><span>– – 42°C override</span></div></div><div id="temperature-chart" class="chart-wrap"><div class="empty-state">A fresh run will draw its measured simulation trajectory here.</div></div><div class="playback"><button id="play" class="secondary" disabled>Play trajectory</button><input id="timeline" type="range" min="0" max="0" value="0" disabled aria-label="Trajectory time"><span id="playback-time" class="mono">— / — s</span><button id="export-run" class="secondary" disabled>↓ Run JSON</button><button id="export-csv" class="secondary" disabled>↓ Trace CSV</button></div><p class="field-note">Playback animates calculated samples at an accelerated rate. It does not generate or interpolate new measurements.</p></div>
+        <div id="run-comparison" class="panel" hidden></div>
+      </section>
+      <section class="view" id="results" hidden>
+        <div class="page-head"><div><div class="eyebrow">02 / FIXED HELD-OUT EVALUATION</div><h1>What the study found<span class="teal">.</span></h1><p>Recalculated from per-episode records. Every controller faces the same eight cases.</p></div><span class="pill neutral">RECORDED RESULTS</span></div>
+        <div class="notice"><strong>The measured conclusion</strong><span>At the saved training budget, all three learned controllers have higher shielded mean cost than tuned PID. The unshielded learned policies violate the study temperature band.</span></div>
+        <div class="panel"><div class="panel-title"><h2>Controller comparison</h2><div class="segmented"><button id="show-shielded" class="selected">Supervisor enabled</button><button id="show-raw">Supervisor disabled</button></div></div><div id="comparison-bars"></div><div class="table-scroll" id="comparison-table"></div><p class="field-note">Cost is the normalized integrated objective, not Wh. Percentages are means of episode-level percentages, not pooled time-weighted rates. RL: five training seeds × eight episodes; baselines: eight episodes. Standard deviations describe different sources of variability.</p></div>
+        <div class="two-panels"><div class="panel"><div class="panel-title"><h2>Does cooling matter?</h2><span class="pill neutral">HARDNESS GATE</span></div><div id="hardness"></div><p class="field-note">Recorded null-controller runs without supervision. Extreme temperatures are model outputs, not measurements of a real pack.</p></div><div class="panel"><div class="panel-title"><h2>Inference on the recorded laptop</h2></div><div id="benchmark"></div><p class="field-note" id="benchmark-detail"></p><p class="field-note">Recorded benchmark, not a current timing test or automotive ECU validation. Control updates every 5 s; the paper's 100 ms line is illustrative.</p></div></div>
+        <div class="panel"><div class="panel-title"><h2>Per-episode evidence</h2><span class="muted small">Original recorded outcomes</span></div><div class="two-fields"><div><label for="episode-filter">CONTROLLER</label><select id="episode-filter"><option value="sac">SAC</option><option value="pid">PID</option><option value="ppo">PPO</option><option value="td3">TD3</option><option value="null">Null</option><option value="bangbang">Bang-bang</option><option value="mpc">MPC</option></select></div><div><label for="mode-filter">SUPERVISOR</label><select id="mode-filter"><option value="true">Enabled</option><option value="false">Disabled</option></select></div></div><div id="episode-table" class="table-scroll"></div></div>
+      </section>
+      <section class="view" id="training" hidden>
+        <div class="page-head"><div><div class="eyebrow">03 / EXPERIMENT TRAIL</div><h1>Training, on record<span class="teal">.</span></h1><p>Actual TensorBoard scalar samples, checkpoints, and run configurations.</p></div><span class="pill neutral">NO TRAINING IN BROWSER</span></div>
+        <div class="metric-grid" id="training-metrics"></div>
+        <div class="panel chart-panel"><div class="panel-title"><div><h2>Training-time evaluation return</h2><span class="muted small">Tuning split · higher is better · each line is one saved run</span></div><div class="chart-key"><span><i class="key teal-bg"></i>SAC</span><span><i class="key blue-bg"></i>TD3</span><span><i class="key orange-bg"></i>PPO</span></div></div><div id="training-chart" class="chart-wrap"></div><p class="field-note">Only stored eval/return events are plotted. Connecting lines join logged observations; they are not additional measurements. This tuning curve is separate from the held-out test set.</p></div>
+        <div class="panel"><div class="panel-title"><h2>Saved experiment ledger</h2><span class="small muted">Open a configuration or download a checkpoint</span></div><div class="table-scroll" id="training-table"></div></div>
+      </section>
+      <section class="view" id="evidence" hidden>
+        <div class="page-head"><div><div class="eyebrow">04 / VERIFY THE CLAIMS</div><h1>Evidence, with boundaries<span class="teal">.</span></h1><p>Follow the path from individual episodes to the manuscript's result tables.</p></div><button id="export-evidence" class="secondary">↓ Evidence JSON</button></div>
+        <div class="panel" id="paper-revision" hidden><div class="panel-title"><h2>Corrected research paper</h2><span class="pill" id="paper-badge"></span></div><p class="test-detail" id="paper-detail"></p><p><a class="secondary" id="paper-pdf" target="_blank" rel="noopener">Paper PDF ↗</a> <a id="paper-references" target="_blank" rel="noopener">Verified reference registry</a></p><p class="field-note">Venue requirements and evaluator-facing public links have not yet been decided. The paper states these remaining submission requirements.</p></div>
+        <div id="audit-summary" class="notice"></div>
+        <div class="two-panels"><div class="panel"><div class="panel-title"><h2>Manuscript & artifact checks</h2></div><div id="audit-checks"></div></div><div class="panel"><div class="panel-title"><h2>Executed verification</h2></div><div id="test-status"></div><hr><div id="reproduction-status"></div></div></div>
+        <div class="panel"><div class="panel-title"><h2>What these records establish</h2></div><div class="boundaries"><div><h3>Demonstrated in simulation</h3><p>Four-node electrothermal plant; separate pump, fan and chiller control; saved continuous-action policies; fixed raw and supervised evaluations; local inference benchmark.</p></div><div><h3>Outside the evidence</h3><ul id="audit-limits"></ul></div></div></div>
+        <div class="panel"><div class="panel-title"><h2>Driving-input provenance</h2><span class="small muted">Source speeds → modeled electrical demand</span></div><div id="provenance"></div></div>
+        <div class="panel"><div class="panel-title"><h2>Source artifact catalog</h2><input id="artifact-search" type="search" placeholder="Filter files…" aria-label="Filter evidence files"></div><p class="field-note">SHA-256 fingerprints establish the inspected file identity. They do not prove when a file was created or certify historical authenticity. Downloaded PyTorch checkpoints should only be loaded from trusted sources.</p><div id="artifacts" class="table-scroll"></div></div>
+      </section>
+      <footer><span>RL Battery Lab / Simulation-based research</span><span id="generated-at">Reading source artifacts…</span></footer>
+    </div>
+  </main>
+</body>
+</html>

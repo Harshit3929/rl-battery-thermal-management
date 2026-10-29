@@ -1,0 +1,139 @@
+{
+  "checked_on": "2026-10-27",
+  "scope": "Targeted primary-source update; not an exhaustive systematic review",
+  "references": [
+    {
+      "id": 1,
+      "text": "Y. Zhang, J. Huang, L. He, D. Zhao, and Y. Zhao, \"Reinforcement learning-based control for the thermal management of the battery and occupant compartments of electric vehicles,\" Sustainable Energy & Fuels, vol. 8, pp. 588-603, 2024, doi: 10.1039/D3SE01403G.",
+      "url": "https://doi.org/10.1039/D3SE01403G",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 1
+    },
+    {
+      "id": 2,
+      "text": "M. H. Abbasi, Z. Arjmandzadeh, J. Zhang, B. Xu, and V. Krovi, \"Deep reinforcement learning based fast charging and thermal management optimization of an electric vehicle battery pack,\" Journal of Energy Storage, vol. 95, art. 112466, 2024, doi: 10.1016/j.est.2024.112466.",
+      "url": "https://doi.org/10.1016/j.est.2024.112466",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 2
+    },
+    {
+      "id": 3,
+      "text": "T. Haarnoja, A. Zhou, P. Abbeel, and S. Levine, \"Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor,\" Proc. 35th Int. Conf. Machine Learning, pp. 1861-1870, 2018.",
+      "url": "https://proceedings.mlr.press/v80/haarnoja18b.html",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 3
+    },
+    {
+      "id": 4,
+      "text": "S. Fujimoto, H. van Hoof, and D. Meger, \"Addressing function approximation error in actor-critic methods,\" Proc. 35th Int. Conf. Machine Learning, pp. 1587-1596, 2018.",
+      "url": "https://proceedings.mlr.press/v80/fujimoto18a.html",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 4
+    },
+    {
+      "id": 5,
+      "text": "J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, \"Proximal policy optimization algorithms,\" arXiv:1707.06347, 2017.",
+      "url": "https://arxiv.org/abs/1707.06347",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 5
+    },
+    {
+      "id": 6,
+      "year": 2026,
+      "doi": "10.1016/j.compchemeng.2025.109406",
+      "text": "S. Shin, D. Jeong, and Y. Kim, \"Deep reinforcement learning-based thermal management of battery subpack in electric vehicle,\" Computers & Chemical Engineering, vol. 204, art. 109406, 2026, doi: 10.1016/j.compchemeng.2025.109406.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0098135425004090",
+      "url": "https://doi.org/10.1016/j.compchemeng.2025.109406",
+      "checked": "2026-10-27",
+      "status": "publisher metadata and abstract checked; no external performance numbers reused",
+      "source_id": 12
+    },
+    {
+      "id": 7,
+      "year": 2025,
+      "doi": "10.4271/14-14-03-0022",
+      "text": "Z. Arjmandzadeh, M. Hossein Abbasi, H. Wang, J. Zhang, and B. Xu, \"Electric Vehicle Battery Thermal Management under Extreme Fast Charging with Deep Reinforcement Learning,\" SAE International Journal of Electrified Vehicles, vol. 14, no. 3, pp. 427-446, 2025, doi: 10.4271/14-14-03-0022.",
+      "source": "https://saemobilus.sae.org/articles/electric-vehicle-battery-thermal-management-extreme-fast-charging-deep-reinforcement-learning-14-14-03-0022",
+      "url": "https://doi.org/10.4271/14-14-03-0022",
+      "checked": "2026-10-27",
+      "status": "publisher metadata and abstract checked; no external performance numbers reused",
+      "source_id": 13
+    },
+    {
+      "id": 8,
+      "year": 2025,
+      "doi": "10.1016/j.eswa.2025.127221",
+      "text": "X. Guo, J. Peng, H. He, C. Wu, H. Zhang, and C. Ma, \"Integrated thermal-energy management for electric vehicles in high-temperature conditions using hierarchical reinforcement learning,\" Expert Systems with Applications, vol. 276, art. 127221, 2025, doi: 10.1016/j.eswa.2025.127221.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0957417425008437",
+      "url": "https://doi.org/10.1016/j.eswa.2025.127221",
+      "checked": "2026-10-27",
+      "status": "publisher metadata and abstract checked; no external performance numbers reused",
+      "source_id": 14
+    },
+    {
+      "id": 9,
+      "year": 2026,
+      "doi": "10.1016/j.egyai.2026.100751",
+      "text": "A.-U.-H. Najmi, A. Jain, T. Esch, and B. Shabani, \"Deep reinforcement learning-enabled intelligent thermal management controls for hybrid fuel cell-battery powertrains under cold conditions,\" Energy and AI, vol. 24, art. 100751, 2026, doi: 10.1016/j.egyai.2026.100751.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S2666546826000777",
+      "author_source": "https://www.fh-aachen.de/fh-aachen/hochschulstruktur/zentrale-betriebseinheiten/bibliothek/publikationen?tx_fhacopus_komplett%5Buid%5D=526",
+      "url": "https://doi.org/10.1016/j.egyai.2026.100751",
+      "checked": "2026-10-27",
+      "status": "publisher metadata and abstract checked; no external performance numbers reused",
+      "source_id": 15
+    },
+    {
+      "id": 10,
+      "text": "U.S. Environmental Protection Agency, \"Dynamometer drive schedules,\" https://www.epa.gov/vehicle-and-fuel-emissions-testing/ dynamometer-drive-schedules, accessed Oct. 27, 2026.",
+      "url": "https://www.epa.gov/vehicle-and-fuel-emissions-testing/dynamometer-drive-schedules",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 6
+    },
+    {
+      "id": 11,
+      "text": "C.-H. Chen et al., \"Development of experimental techniques for parameterization of multi-scale lithium-ion battery models,\" Journal of The Electrochemical Society, vol. 167, no. 8, art. 080534, 2020, doi: 10.1149/1945-7111/ab9050.",
+      "url": "https://doi.org/10.1149/1945-7111/ab9050",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 7
+    },
+    {
+      "id": 12,
+      "text": "S. G. Marquis, V. Sulzer, R. Timms, C. P. Please, and S. J. Chapman, \"An asymptotic derivation of a single particle model with electrolyte,\" J. Electrochem. Soc., vol. 166, no. 15, pp. A3693-A3706, 2019, doi: 10.1149/2.0341915jes.",
+      "url": "https://doi.org/10.1149/2.0341915jes",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 8
+    },
+    {
+      "id": 13,
+      "text": "V. Sulzer, S. G. Marquis, R. Timms, M. Robinson, and S. J. Chapman, \"Python Battery Mathematical Modelling (PyBaMM),\" J. Open Res. Softw., vol. 9, no. 1, art. 14, 2021, doi: 10.5334/jors.309.",
+      "url": "https://doi.org/10.5334/jors.309",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 9
+    },
+    {
+      "id": 14,
+      "text": "R. Agarwal, M. Schwarzer, P. S. Castro, A. Courville, and M. G. Bellemare, \"Deep reinforcement learning at the edge of the statistical precipice,\" Advances in Neural Information Processing Systems, vol. 34, pp. 29304-29320, 2021.",
+      "url": "https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 10
+    },
+    {
+      "id": 15,
+      "text": "A. Raffin, A. Hill, A. Gleave, A. Kanervisto, M. Ernestus, and N. Dormann, \"Stable-Baselines3: Reliable reinforcement learning implementations,\" Journal of Machine Learning Research, vol. 22, no. 268, pp. 1-8, 2021.",
+      "url": "https://jmlr.org/papers/v22/20-1364.html",
+      "checked": "2026-10-27",
+      "status": "primary record checked",
+      "source_id": 11
+    }
+  ]
+}

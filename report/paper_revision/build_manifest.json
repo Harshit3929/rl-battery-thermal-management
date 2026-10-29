@@ -1,0 +1,30 @@
+{
+  "pdf": "output\\pdf\\IEEE_BTMS_Research_Paper_Formatted.pdf",
+  "pdf_sha256": "3af539974075f169b9238ea20e0db3090bccb27e35334493d5330e7a41037fc9",
+  "pages": 9,
+  "references": 15,
+  "equations": 11,
+  "figures": 6,
+  "tables": 11,
+  "input_sha256": {
+    "deliverables\\IEEE_BTMS_Manuscript.json": "5b68e15a92b02ee32c37157ce4c94fcbb2d4ecb3eed569842bedc131b802fe23",
+    "report\\results\\controller_comparison.csv": "cf7b4f3d018c59efec74bc9583c917aaa00a38c75fee105a96d51a5358bc9452",
+    "report\\results\\cycle_report.json": "7083fcbdc5614b27e10161511822f4ea08a4bb69acd98fee22e13f3b04920340",
+    "report\\results\\deployment_benchmark_sac_seed0.json": "f9f337aefac952aa22a147320d0badeca375084ab545d1f91d1450d25195cb58",
+    "report\\dashboard\\replays\\pid_hot_s701_shielded.json": "803182d0f72142de866c02660cb04517eebbc4262a93f925e39bc31ef39f9e71",
+    "report\\dashboard\\replays\\sac_hot_s701_shielded.json": "f12ef23d6d7dde1ba30e11c2efa92be3425d1f3c80164493126ae937edc5808e",
+    "scripts\\build_research_paper.py": "8f3b7226e6958cf584f11755c86917420ff0dec186d04e3f87aafb4ccba0653c"
+  },
+  "figure_sha256": {
+    "report\\paper_revision\\figures\\figure_1.png": "b994eb77a426496c3a004dd59aa75ad6ee9fe154d7ec312701efd93a8b1577c4",
+    "report\\paper_revision\\figures\\figure_2.png": "7e2b5baa58fac31b1fceb3e5495ebe3f9f980aa6d62a2007c4a2bbe5c1578a4f",
+    "report\\paper_revision\\figures\\figure_3.png": "a087d7e09b043d75d0dc97b3abf39d712da4edcbac0bf30eff20905d41452eda",
+    "report\\paper_revision\\figures\\figure_4.png": "1b2f42a9b3392c285eef2d15335d5ad36794d83f32920330a035f577668eeb44",
+    "report\\paper_revision\\figures\\figure_5.png": "b53cda7a035ba224907f344f212314895396263a4ef1dabc4616f3484a202d72",
+    "report\\paper_revision\\figures\\figure_6.png": "0708a4afb234b54a28da27c463eb7639575ab07eb120a9a355cd81e6b8c18733"
+  },
+  "remaining_external_requirements": [
+    "Venue-specific template/page limits not specified",
+    "No verified public repository/data/demo URLs supplied"
+  ]
+}

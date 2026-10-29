@@ -1,0 +1,18 @@
+{
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.14",
+  "torch": "2.14.0+cpu",
+  "n_envs": 8,
+  "algo": "td3",
+  "seed": 4,
+  "training_cycles": [
+    "udds",
+    "hwfet",
+    "us06"
+  ],
+  "held_out_cycle": "nedc",
+  "source_revision": "see recorded configuration and report/results validation artifacts",
+  "wall_time_s": 22.2405746000004,
+  "completed_steps": 20000
+}
