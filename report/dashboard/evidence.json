@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T06:36:06.066901+00:00",
+  "generated_at": "2026-10-29T06:40:00.730857+00:00",
   "data_kind": "recorded simulation artifacts",
   "comparisons": [
     {
@@ -11129,7 +11129,7 @@
     }
   ],
   "audit": {
-    "checked_at": "2026-10-29T06:36:06.056038+00:00",
+    "checked_at": "2026-10-29T06:40:00.721190+00:00",
     "checks": [
       {
         "name": "Aggregated means reproduce from episode records",

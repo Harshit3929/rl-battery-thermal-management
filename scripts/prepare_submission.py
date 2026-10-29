@@ -28,7 +28,7 @@ def main():
     chosen.update(str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'scripts').glob('*') if p.is_file())
     chosen.update(str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'docs').glob('*.md'))
     chosen.update(str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'dashboard-qa').glob('*')
-                  if p.is_file() and p.suffix in ['.js','.json','.mjs'])
+                  if p.is_file() and p.suffix in ['.js','.json','.mjs','.cjs'])
     chosen.update(str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'deliverables').glob('*')
                   if p.is_file() and p.suffix in ['.docx','.pptx'])
     chosen.add('report/dashboard/replays/index.json')

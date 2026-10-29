@@ -275,6 +275,21 @@
     "sha256": "23b5f43192fe46cb286f55cd68edb576c011816dcbf48432dcbbfdc22b4ba5d3"
   },
   {
+    "path": "dashboard-qa/paper.cjs",
+    "bytes": 1980,
+    "sha256": "ed116c79bf2f161604ebc56a5cc2ea4dfb3ee4515fe3eb8b1119066e520d1b0f"
+  },
+  {
+    "path": "dashboard-qa/static.cjs",
+    "bytes": 1826,
+    "sha256": "0d0b377cf33e1b7c57ab2c352e5f4925e9a7afbfd9676ac8eeb83d8e6bf89ad7"
+  },
+  {
+    "path": "dashboard-qa/test.cjs",
+    "bytes": 5638,
+    "sha256": "4d72ba3e60f72aa6f8819c18696daadf4c7301eb587c798ca8e21b9f8ae08587"
+  },
+  {
     "path": "data/cycles/ece.source.txt",
     "bytes": 1609,
     "sha256": "4c04507a838e4774694daa7f03811a861ab361d2267acee3c31677f4668a2e8f"
@@ -1067,7 +1082,7 @@
   {
     "path": "report/dashboard/evidence.json",
     "bytes": 2116006,
-    "sha256": "fbada023d33166b2d240b396c875fc7ae6bc886963aa958683e32ec42e304a99"
+    "sha256": "af122e02cd2bcf9ce07412ea1eec49e566ceaf0d758c273630702ee26aca9459"
   },
   {
     "path": "report/dashboard/mpc_spotcheck.json",
@@ -1366,13 +1381,13 @@
   },
   {
     "path": "scripts/prepare_submission.py",
-    "bytes": 7869,
-    "sha256": "fdc5b2833d0db42ddd7ec1970b13c5bb0a416b4c9d3c7969673a53506588eddb"
+    "bytes": 7876,
+    "sha256": "369fc5f9144274ec725d3e4dce15ebd01605547209ab9b5b8fd869e9fd189b89"
   },
   {
     "path": "scripts/publish_github.py",
-    "bytes": 7362,
-    "sha256": "965dbccec8e7a2fa90b316ab2757b0eb2f97b62004c17f88c52e752f6292101f"
+    "bytes": 7668,
+    "sha256": "b3c62b850b7ee284dccabecfb3f6d096365b5e195aa1ca99338f7bc02678e82a"
   },
   {
     "path": "scripts/run_all.ps1",

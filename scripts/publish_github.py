@@ -19,7 +19,7 @@ PACKAGE=ROOT/'submission/github'
 STATE=ROOT/'submission/GITHUB_PUBLICATION.json'
 REPO='Harshit3929/rl-battery-thermal-management'
 API='https://api.github.com/repos/'+REPO
-TEXT={'.py','.md','.txt','.json','.csv','.yaml','.yml','.tex','.ps1','.sh','.html','.css','.js','.mjs'}
+TEXT={'.py','.md','.txt','.json','.csv','.yaml','.yml','.tex','.ps1','.sh','.html','.css','.js','.mjs','.cjs'}
 
 def blob_sha(data):
     return hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
@@ -72,7 +72,12 @@ def main():
         ref=request(API+'/git/ref/heads/main')
     head=ref['object']['sha']
     if state.get('published_commit')==head:
-        print('Repository already contains the published commit.',flush=True);return
+        existing=request(API+'/git/trees/'+head+'?recursive=1')
+        remote={x['path']:x['sha'] for x in existing['tree'] if x['type']=='blob'}
+        desired={name:blob_sha((PACKAGE/name).read_bytes()) for name in paths}
+        if remote==desired:
+            print('Repository already contains the verified package.',flush=True);return
+        state['base_commit']=head;save()
     if 'base_commit' not in state:
         existing=request(API+'/git/trees/'+head+'?recursive=1')
         assert all(x['path']=='README.md' for x in existing['tree'] if x['type']=='blob'),'Review the existing repository before publishing'
